@@ -1,157 +1,16 @@
----
-title: "Cdk7_paper_figure"
-smooth-scroll: true
-format: gfm
-editor:
-  markdown:
-    wrap: 72
-    references: 
-      location: block
-    canonical: true
-execute:
-  echo: true
-  warning: false
----
+# Cdk7_paper_figure
 
 ### Percent similarity
 
-```{r percent_similar, echo=FALSE, eval=TRUE}
-
-library(magrittr)
-
-percent_dat <- tibble::tribble(
-                 ~org, ~percent_similar_Hs,
-                 "Sc",                67.3,
-                 "Cn",                75.1
-                 )
-
-
-
-percent_dat %>% ggplot2::ggplot(ggplot2::aes(org, percent_similar_Hs, label=percent_similar_Hs))+
-                ggplot2::geom_col()+
-                ggplot2::coord_cartesian(ylim=c(60, 76))+
-                ggplot2::geom_text(vjust=-1)+
-                ggplot2::theme_bw()
-```
+![](README_files/figure-commonmark/percent_similar-1.png)
 
 ### enzyme assay
 
-```{r enzyme_assay, echo=FALSE, eval=FALSE}
-
-dat_enzyme_1 <- tibble::tribble(
-     ~sample, ~`0`,  ~`47`,  ~`131`,   ~`268`,
-      "DMSO",      100L, 80.35794672, 81.18528887, 62.63131296,
-     "Mev-50uM",      100L,  94.5645988, 95.80705844, 97.54990835,
-     "Mev-10uM",      100L,   92.907477, 91.95663725, 90.02508874,
-   "BS-50uM",      100L, 93.03342787, 90.18773307, 84.59772797,
-   "BS-10uM",      100L, 92.15284737,  88.2825586, 70.07810051
-  )
-
-
-
-dat_enzyme_2 <- tibble::tribble(
-     ~sample, ~`0`,       ~`47`,      ~`134`,      ~`272`,
-      "DMSO", 100L, 89.89328483, 68.81164692, 44.36823976,
-  "Mev-50uM", 100L, 101.0776987, 96.54690058, 90.87359802,
-  "Mev-10uM", 100L, 98.38122895, 87.36840241, 77.02756869,
-   "BS-50uM", 100L,  96.0701645, 80.64617696, 70.41294014,
-   "BS-10uM", 100L, 94.27180134, 73.25771618, 52.91851908
-  )
-
-
-purv_dat <- tibble::tribble(
-                  ~sample, ~`0`,      ~`100`,      ~`225`,
-                   "DMSO", 100L,  78.9505485, 47.30576822,
-              "PurA-50uM", 100L, 84.81585758, 61.77580879,
-              "PurA-10uM", 100L, 81.17350236, 55.96325812
-              )
-
-
-set_specific <- purv_dat %>%
-              tidyr::gather(Time, value, -sample) %>%
-              dplyr::mutate(Time=as.numeric(Time), 
-                            sample=forcats::as_factor(sample)) %>%
-              dplyr::filter(stringr::str_detect(sample, 'DMSO|Mev'), Time!=47) 
-
-set_specific %>%
-ggplot2::ggplot(ggplot2::aes(Time, value, color=sample, group=sample))+
-                     ggplot2::geom_line( lwd=1.5)+ ggplot2::theme_bw()+
-  ggplot2::geom_point(color="black")+
-  ggplot2::scale_y_continuous(minor_breaks = seq(40, 100, by=5),
-                              breaks = seq(40,100, by=10), limits = c(40,100),
-                              guide = ggplot2::guide_axis(minor.ticks = TRUE) )+
- ggplot2::scale_x_continuous(minor_breaks = seq(0, 300, by=50),
-                              breaks = seq(0,300, by=100), limits = c(0,300),
-                              guide = ggplot2::guide_axis(minor.ticks = TRUE)) +
-  ggplot2::labs(
-        y = "Percentage of ATP remaining", x = "Time in minutes")+
-  ggplot2::scale_color_manual(values=c("#8A9045FF", "#FFA319FF", "#155F83FF"))
-
-```
-
 #### 
-
-```{r Pvalue, eval=FALSE, echo=FALSE}
-
-dat_tble_group <- dat_last_time %>%
-                      tidyr::separate(col = sample, into = c("sample", "replicate"), sep = "_") %>%
-                      dplyr::select(-c(replicate)) %>%
-                      tidyr::gather(condition, value, -sample) %>%
-                      dplyr::mutate(condition=forcats::as_factor(condition))
-
-  pval_tibble <- dat_tble_group %>%
-                   # dplyr::mutate(sample=forcats::as_factor(sample)) %>%
-                    dplyr::group_by(sample) %>%
-                    rstatix::t_test(value ~ sample, paired = FALSE, ref.group = control_group) %>%
-                    dplyr::mutate(p=p/2,
-                                  # left tailed: treatment < control, right tailed: treatment > control
-                                  # However, in population of genes if some are control > treatment or control < treatment.
-                                  # then converting the two-tailed pvalue into one-tailed useful (by dividing the two-tailed pvalue into half)
-                                  # as when we don't know the direction of population
-
-                                  pval_significance= dplyr::if_else(p < 0.05 & p > 0.01,"*",
-                                                                    dplyr::if_else(p < 0.01 & p > 0.001, "**", # adding pvalue significance
-                                                                                   dplyr::if_else(p < 0.001 & p > 0.0001, "***",
-                                                                                                  dplyr::if_else(p< 0.0001, "****", "ns"))))) %>%
-
-                    rstatix::adjust_pvalue(method = "fdr") %>%
-                    rstatix::add_significance("p.adj")
-```
 
 #### Enzyme assay pvalue at last time-point
 
-```{r pval_last, echo=FALSE, eval=TRUE}
-
-dat_last_time <- tibble::tribble(
-                        ~sample,      ~assay,
-                       "DMSO_1",           1,
-                    "BS-10uM_1", 1.118898794,
-                   "Mev-10uM_1", 1.437381471,
-                    "BS-50uM_1", 1.350725763,
-                   "Mev-50uM_1",  1.55752616,
-                       "DMSO_2",           1,
-                    "BS-10uM_2", 1.192711709,
-                   "Mev-10uM_2", 1.736097017,
-                    "BS-50uM_2", 1.587012253,
-                   "Mev-50uM_2", 2.048167755
-                   )
-
-
-
-
-#CnPho80Analysis::plot_pvalues(dat_tble = dat_last_time, display_pval = TRUE, control_group = "BS-50uM", y_label = "ATP used normalised to DMSO")
-
-dat_last_time %>% 
-  dplyr::filter(stringr::str_detect(sample, '_2')) %>%
-  dplyr::mutate(sample=forcats::as_factor(sample)) %>%
-  ggplot2::ggplot(ggplot2::aes(sample, assay))+
-  ggplot2::geom_col()+
-  ggplot2::coord_cartesian(ylim=c(0.85, 2.1))+
-  ggplot2::theme_bw()+
-  ggplot2::ylab("ATP usage normalised to DMSO at 4.5hr")
-  
-  
-```
+![](README_files/figure-commonmark/pval_last-1.png)
 
 ### Dose response curve 2 fold serial dilution (15/10/2024)
 
@@ -175,20 +34,7 @@ Experimental setup
 
 #### H99
 
-```{r dose_curve_17Oct24, echo=FALSE, eval=TRUE}
-
-dose_curve_data <- readr::read_delim("data_files/dose_response_17Oct24.txt", delim="\t", col_names = TRUE) 
-  
-dosecurve_dt <-  dose_curve_data %>% 
-              dplyr::mutate(Time= stringr::str_replace_all(pattern = ":", replacement = ".", Time), Time=stringi::stri_replace_last_regex(Time, "\\.0[0-9]" , '')) %>% dplyr::mutate(Time=as.double(Time))
-              
-current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^Mev|^Time"))
-
-colr=c("#984EA3", "#377EB8", "#4DAF4A", "#E41A1C", "#FF7F00", "#FFFF33", "#A65628", "#F781BF")
-
-growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
-
-```
+![](README_files/figure-commonmark/dose_curve_17Oct24-1.png)
 
 Conclusions
 
@@ -199,43 +45,26 @@ Conclusions
 
 #### CAK-tag
 
-```{r dose_curve_20Dec24, echo=FALSE, eval=TRUE}
+![](README_files/figure-commonmark/dose_curve_20Dec24-1.png)
 
-dose_curve_data <- readr::read_delim("data_files/dose_response_Mev_20Dec24_Cdk7Tag.txt", delim="\t", col_names = TRUE) 
-  
-dosecurve_dt <-  dose_curve_data %>% 
-              dplyr::mutate(Time= stringr::str_replace_all(pattern = ":", replacement = ".", Time), Time=stringi::stri_replace_last_regex(Time, "\\.0[0-9]" , '')) %>% dplyr::mutate(Time=as.double(Time))
-
-# KN99          
-current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^KN99|^Time"))
-
-growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
-
-# CAK-tag
-
-current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^CM2448|^Time"))
-
-growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
-
-```
+![](README_files/figure-commonmark/dose_curve_20Dec24-2.png)
 
 Conclusions
 
 1.  WT-KN99 and Cdk7 tagged strains have MIC of 12.5µg/ml for Mevociclib
 2.  The MIC values are same as Cn H99
 3.  Together results suggests
-    -   Irrespective of strain (KN99 or H99) C. neoformans have same MIC
-        for Cdk7 inhibitors
+    - Irrespective of strain (KN99 or H99) C. neoformans have same MIC
+      for Cdk7 inhibitors
 
-    -   Adding tags to the Cdk7-complex does not alter the growth
-        inhibition in presence of Cdk7 inhibitors
+    - Adding tags to the Cdk7-complex does not alter the growth
+      inhibition in presence of Cdk7 inhibitors
 
 ### Phospho-proteomics
 
 #### Phospho-proteomics
 
-```{r filter_phosphoData}
-
+``` r
 phospho_tb <- readr::read_delim("data_files/Phospho_RawData.txt", delim="\t", col_names = TRUE)
 
 phospho_tb <- phospho_tb %>% 
@@ -291,7 +120,11 @@ Phospho_stats %>%
             ggplot2::theme_bw()+
             ggplot2::geom_text(vjust=-1)+
             ggplot2::scale_fill_manual(values=c("red", "gray", "blue", "salmon", "cyan4"))
+```
 
+![](README_files/figure-commonmark/filter_phosphoData-1.png)
+
+``` r
 # combine WT_only to Down and Mev_Only to Up
 
 Phospho_stats_2 <- phospho_filtered %>% 
@@ -305,13 +138,13 @@ Phospho_stats_2 %>% dplyr::ungroup() %>%
             ggplot2::theme_bw()+
             ggplot2::geom_text(vjust=-1)+
             ggplot2::scale_fill_manual(values=c("red", "gray", "blue"))
-
 ```
+
+![](README_files/figure-commonmark/filter_phosphoData-2.png)
 
 #### LCMS
 
-```{r filter_lcms}
-
+``` r
 lcms_dat = readr::read_delim("data_files/LCMS_RawData.txt", delim="\t")
 
 # filter-out rows having "Not found" in atleast 2 of the three replicates
@@ -354,13 +187,13 @@ LCMS_stats %>% ggplot2::ggplot(ggplot2::aes(class, n, label=n, fill=class))+
             ggplot2::theme_bw()+
             ggplot2::geom_text(vjust=-1)+
             ggplot2::scale_fill_manual(values=c("red", "gray", "blue"))
-
-
 ```
+
+![](README_files/figure-commonmark/filter_lcms-1.png)
 
 #### Compare LCMS and Phospho-proteomics
 
-```{r lcms_phos_venn}
+``` r
 dat_venn1 <- readr::read_delim("data_files/LCSM_Phosph_VennInput.txt", delim="\t", col_names =TRUE)
 
 
@@ -373,7 +206,12 @@ clean_list <- lapply(v1, function(x) x[!is.na(x)])
 
 
 lengths(clean_list)
+```
 
+    No-change_LCMS  No-change_Pho       Down_Pho         Up_Pho 
+              2601            466            203            174 
+
+``` r
 names(clean_list)=factor(names(clean_list))
 upset_venn1 <- UpSetR::upset(UpSetR::fromList(clean_list), 
           nsets = ncol(dat_venn),
@@ -383,7 +221,11 @@ upset_venn1 <- UpSetR::upset(UpSetR::fromList(clean_list),
           text.scale=2, sets.x.label = "No. of genes")
 
 print(upset_venn1)
+```
 
+![](README_files/figure-commonmark/lcms_phos_venn-1.png)
+
+``` r
 # Convert matrix to tidy format
 UpSetR::fromList(clean_list) %>%
         dplyr::mutate(gene = rownames(.)) %>%
@@ -396,9 +238,19 @@ UpSetR::fromList(clean_list) %>%
 table(gene_intersections$sets)
 ```
 
+
+                        Down_Pho      Down_Pho,No-change_LCMS 
+                              81                          122 
+                  No-change_LCMS No-change_LCMS,No-change_Pho 
+                            2139                          254 
+           No-change_LCMS,Up_Pho                No-change_Pho 
+                              86                          212 
+                          Up_Pho 
+                              88 
+
 #### Growth in liquid culture
 
-```{r growth_in_tube}
+``` r
 growth_tube_dt <- tibble::tribble(
                     ~Time,       ~DMSO,     ~SY1365,
                      "1h", 140.7514451, 130.0578035,
@@ -416,5 +268,6 @@ growth_tube_dt %>%
   ggplot2::theme_bw()+
   ggplot2::facet_wrap(~Sample, scales="fixed")+
   ggplot2::scale_fill_manual(values=c("grey", "darkgreen","darkblue"))
-
 ```
+
+![](README_files/figure-commonmark/growth_in_tube-1.png)
