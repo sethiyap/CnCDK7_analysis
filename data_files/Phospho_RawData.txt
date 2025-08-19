@@ -1,0 +1,962 @@
+Accession	TotalPeptides	UniquePeptides	Abundances_With	Abundances_Without	Sample_With_1	Sample_With_2	Sample_Without_1	Sample_Without_2
+CNAG_01155-t26_1-p1	7	7	97.6	102.4	High	High	High	High
+CNAG_01744-t26_1-p1	6	6	82.8	117.2	High	High	High	High
+CNAG_04478-t26_1-p1	10	10	100.1	99.9	High	High	High	High
+CNAG_05309-t26_1-p1	4	4	70.4	129.6	High	High	High	High
+CNAG_01130-t26_1-p1	8	1	50.2	149.8	Not Found	Peak Found	High	High
+CNAG_02404-t26_1-p1	6	6	138.8	61.2	High	High	High	High
+CNAG_01130-t26_2-p1	8	1			Not Found	Not Found	High	Not Found
+CNAG_07571-t26_1-p1	5	5	112.5	87.5	High	High	High	High
+CNAG_03319-t26_1-p1	6	6	134	66	High	High	High	High
+CNAG_00848-t26_1-p1	9	9	60.1	139.9	High	High	High	High
+CNAG_03771-t26_1-p1	7	7	92.5	107.5	High	High	High	High
+CNAG_03143-t26_1-p1	6	6	84.2	115.8	High	High	High	High
+CNAG_06081-t26_1-p1	2	2	74.1	125.9	High	High	High	High
+CNAG_01526-t26_1-p1	10	10	93	107	High	High	High	High
+CNAG_03962-t26_1-p1	2	2	106.1	93.9	High	High	High	High
+CNAG_01902-t26_1-p1	9	9	93.6	106.4	High	High	High	High
+CNAG_05109-t26_1-p1	6	6	146.8	53.2	High	High	High	High
+CNAG_02091-t26_1-p1	2	2	54.8	145.2	High	High	High	High
+CNAG_01315-t26_1-p1	6	6	104.2	95.8	High	High	High	High
+CNAG_02568-t26_1-p1	9	9	90.3	109.7	High	High	High	High
+CNAG_05634-t26_1-p1	3	3	83.2	116.8	High	High	High	High
+CNAG_02458-t26_1-p1	6	6	101.9	98.1	High	High	High	High
+CNAG_06301-t26_1-p1	5	5	84.3	115.7	High	High	High	High
+CNAG_04284-t26_1-p1	4	4	101.5	98.5	High	High	High	High
+CNAG_06103-t26_1-p1	6	6	127	73	High	High	High	High
+CNAG_06426-t26_1-p1	1	1	146.1	53.9	High	High	High	High
+CNAG_00402-t26_1-p1	8	8	83.1	116.9	High	High	High	High
+CNAG_01261-t26_1-p1	10	10	103.7	96.3	High	High	High	High
+CNAG_02208-t26_1-p1	4	4	104.9	95.1	High	High	High	High
+CNAG_04587-t26_2-p1	6	6	110.8	89.2	High	High	High	High
+CNAG_05250-t26_1-p1	5	5	126.4	73.6	High	High	High	High
+CNAG_04621-t26_1-p1	5	5	118.9	81.1	High	High	High	High
+CNAG_02854-t26_1-p1	3	3	127.6	72.4	High	High	High	High
+CNAG_03785-t26_1-p1	3	3	100.6	99.4	High	High	High	High
+CNAG_07609-t26_1-p1	5	5	161.1	38.9	High	High	High	High
+CNAG_02810-t26_1-p1	3	3	83	117	High	High	High	High
+CNAG_00858-t26_1-p1	5	1	175.9	24.1	High	High	Peak Found	High
+CNAG_05720-t26_1-p1	3	3	88.1	111.9	High	High	High	High
+CNAG_06839-t26_1-p1	3	3	84.6	115.4	High	High	High	High
+CNAG_02129-t26_1-p1	4	4	80.6	119.4	High	High	High	High
+CNAG_03120-t26_2-p1	2	2	117.7	82.3	High	High	High	High
+CNAG_04361-t26_1-p1	6	6	81.6	118.4	High	High	High	High
+CNAG_04163-t26_1-p1	7	7	96.5	103.5	High	High	High	High
+CNAG_00774-t26_1-p1	4	4	96.3	103.7	High	High	High	High
+CNAG_05416-t26_1-p1	3	3	82	118	High	High	High	High
+CNAG_01549-t26_1-p1	3	3	69.3	130.7	High	High	High	High
+CNAG_04676-t26_1-p1	3	3	94.8	105.2	High	High	High	High
+CNAG_02857-t26_1-p1	7	7	112.6	87.4	High	High	High	High
+CNAG_01182-t26_1-p1	7	7	81.7	118.3	High	High	High	High
+CNAG_05700-t26_1-p1	3	3	114.9	85.1	High	High	High	High
+CNAG_00020-t26_1-p1	2	2	107.4	92.6	High	High	High	High
+CNAG_06455-t26_1-p1	5	5	104.6	95.4	High	High	High	High
+CNAG_06943-t26_1-p1	5	1	157	43	High	High	Peak Found	Peak Found
+CNAG_04028-t26_1-p1	2	2	45.8	154.2	High	High	High	High
+CNAG_01655-t26_1-p1	3	3	80.2	119.8	High	High	High	High
+CNAG_06534-t26_1-p1	4	4	111.6	88.4	High	High	High	High
+CNAG_03724-t26_1-p1	4	4	77	123	High	High	High	High
+CNAG_02501-t26_1-p1	7	7	91.1	108.9	High	High	High	High
+CNAG_07718-t26_1-p1	4	4	115.2	84.8	High	High	High	High
+CNAG_02079-t26_1-p1	4	4	69.1	130.9	High	High	High	High
+CNAG_01031-t26_1-p1	2	2	125.8	74.2	High	High	High	High
+CNAG_03722-t26_1-p1	5	5	77.2	122.8	High	High	High	High
+CNAG_01097-t26_1-p1	1	1	174.7	25.3	High	High	High	Peak Found
+CNAG_06819-t26_1-p1	3	3	171.9	28.1	High	High	High	High
+CNAG_02744-t26_1-p1	5	1	96.2	103.8	High	High	Peak Found	Peak Found
+CNAG_01897-t26_1-p1	4	4	88	112	High	High	High	High
+CNAG_00279-t26_1-p1	1	1	127.6	72.4	High	High	High	High
+CNAG_01446-t26_1-p1	4	4	92.8	107.2	High	High	High	High
+CNAG_05734-t26_2-p1	1	1	133.6	66.4	High	High	High	High
+CNAG_01298-t26_1-p1	4	4	82.1	117.9	High	High	High	High
+CNAG_04639-t26_1-p1	4	4	75.4	124.6	High	High	High	High
+CNAG_04190-t26_1-p1	7	7	109.9	90.1	High	High	High	High
+CNAG_04803-t26_1-p1	8	8	88.7	111.3	High	High	High	High
+CNAG_00972-t26_1-p1	2	2	114.3	85.7	High	High	High	High
+CNAG_02943-t26_1-p1	8	8	101.2	98.8	High	High	High	High
+CNAG_02550-t26_1-p1	4	4	84.7	115.3	High	High	High	High
+CNAG_00104-t26_1-p1	2	2	140.5	59.5	High	High	High	High
+CNAG_03355-t26_1-p1	3	3	62.9	137.1	High	High	High	High
+CNAG_04105-t26_1-p1	2	2	76.9	123.1	High	High	High	High
+CNAG_00055-t26_1-p1	3	3	119.5	80.5	High	High	High	High
+CNAG_06594-t26_1-p1	3	3	159.9	40.1	High	High	High	High
+CNAG_03345-t26_2-p1	3	3	112.7	87.3	High	High	High	High
+CNAG_01126-t26_1-p1	7	7	101.3	98.7	High	High	High	High
+CNAG_03458-t26_1-p1	4	4	47.5	152.5	High	High	High	High
+CNAG_06327-t26_1-p1	6	6	86.1	113.9	High	High	High	High
+CNAG_03046-t26_1-p1	1	1	136.6	63.4	High	High	High	High
+CNAG_05311-t26_1-p1	4	4	106.7	93.3	High	High	High	High
+CNAG_05925-t26_1-p1	4	4	75.3	124.7	High	High	High	High
+CNAG_01587-t26_1-p1	5	5	136.2	63.8	High	High	High	High
+CNAG_05468-t26_1-p1	2	2	137.3	62.7	High	High	High	High
+CNAG_05391-t26_1-p1	5	5	168.8	31.2	High	High	Peak Found	High
+CNAG_04570-t26_1-p1	4	4	112.7	87.3	High	High	High	High
+CNAG_00666-t26_1-p1	4	4	100	100	High	High	High	High
+CNAG_03886-t26_1-p1	2	2	114.3	85.7	High	High	High	High
+CNAG_04733-t26_1-p1	2	2	140	60	High	High	High	High
+CNAG_05661-t26_1-p1	2	2	74.7	125.3	High	Peak Found	High	High
+CNAG_00260-t26_1-p1	9	9	117.4	82.6	High	High	High	High
+CNAG_06060-t26_1-p1	3	3	26.5	173.5	High	High	High	High
+CNAG_02806-t26_1-p1	5	5	47.6	152.4	High	High	High	High
+CNAG_00745-t26_1-p1	4	4	108.9	91.1	High	High	High	High
+CNAG_05198-t26_1-p1	2	2	135.5	64.5	High	High	High	High
+CNAG_03494-t26_1-p1	6	6	114	86	High	High	High	High
+CNAG_00148-t26_1-p1	5	5	97.6	102.4	High	High	High	High
+CNAG_01722-t26_1-p1	3	3	143.5	56.5	High	High	High	High
+CNAG_00363-t26_1-p1	2	2	52.7	147.3	High	High	High	High
+CNAG_06828-t26_1-p1	5	5	84.5	115.5	High	High	High	High
+CNAG_07522-t26_1-p1	6	6	85.3	114.7	High	High	High	High
+CNAG_01673-t26_1-p1	2	2	162.5	37.5	High	High	High	High
+CNAG_06900-t26_1-p1	2	2	48.4	151.6	High	High	High	High
+CNAG_01598-t26_1-p1	2	2	108.7	91.3	High	High	High	High
+CNAG_05167-t26_1-p1	2	2	78.6	121.4	High	High	High	High
+CNAG_05935-t26_1-p1	1	1	54.4	145.6	High	High	High	High
+CNAG_02046-t26_1-p1	4	4	112.8	87.2	High	High	High	High
+CNAG_01905-t26_1-p1	6	6	145.9	54.1	High	High	High	High
+CNAG_06129-t26_1-p1	1	1	79.6	120.4	High	High	High	High
+CNAG_04642-t26_1-p1	5	5	105.6	94.4	High	High	High	High
+CNAG_04699-t26_1-p1	3	3	129.9	70.1	High	High	High	High
+CNAG_01240-t26_1-p1	4	1	155.3	44.7	High	Peak Found	Peak Found	Not Found
+CNAG_05745-t26_1-p1	6	6	12.6	187.4	High	High	High	High
+CNAG_01318-t26_1-p1	3	3	124.7	75.3	High	High	High	High
+CNAG_00286-t26_1-p1	2	2	95.7	104.3	High	High	High	High
+CNAG_06577-t26_1-p1	6	6	79.6	120.4	High	High	High	High
+CNAG_03007-t26_1-p1	3	3	144.9	55.1	High	High	High	High
+CNAG_04586-t26_1-p1	3	3	126.8	73.2	High	High	High	High
+CNAG_03727-t26_1-p1	4	4	96.1	103.9	High	High	High	High
+CNAG_00445-t26_1-p1	4	4	83.4	116.6	High	High	High	High
+CNAG_05603-t26_1-p1	2	2	151.4	48.6	High	High	High	High
+CNAG_04022-t26_1-p1	3	3	74.2	125.8	High	High	High	High
+CNAG_00874-t26_1-p1	2	2	26.2	173.8	Peak Found	High	High	High
+CNAG_03261-t26_1-p1	1	1	140.3	59.7	Not Found	High	High	High
+CNAG_06906-t26_1-p1	5	5	114.8	85.2	High	High	High	High
+CNAG_04797-t26_1-p1	1	1	96.2	103.8	High	High	High	High
+CNAG_05496-t26_1-p1	2	2	171.5	28.5	High	High	High	High
+CNAG_04384-t26_1-p1	1	1	137.9	62.1	High	High	High	High
+CNAG_00970-t26_1-p1	2	2	92.6	107.4	High	High	High	High
+CNAG_04027-t26_1-p1	5	5	90.3	109.7	High	High	High	High
+CNAG_05422-t26_1-p1	3	3	91.4	108.6	High	High	High	High
+CNAG_07514-t26_1-p1	4	4	89.3	110.7	High	High	High	High
+CNAG_01620-t26_1-p1	2	2	142.3	57.7	High	High	High	Peak Found
+CNAG_06553-t26_1-p1	2	2	92.8	107.2	High	High	High	High
+CNAG_01143-t26_1-p1	2	2	72.6	127.4	High	Peak Found	High	High
+CNAG_01852-t26_1-p1	1	1	92.9	107.1	High	Peak Found	High	High
+CNAG_06113-t26_1-p1	2	2	80.6	119.4	High	High	High	High
+CNAG_04049-t26_1-p1	1	1	73	127	High	Peak Found	High	High
+CNAG_06983-t26_1-p1	3	3	134.4	65.6	High	High	High	High
+CNAG_01711-t26_1-p1	2	2	84.6	115.4	High	High	High	High
+CNAG_04321-t26_1-p1	6	6	145	55	High	High	High	Peak Found
+CNAG_03502-t26_1-p1	5	5	77.4	122.6	High	High	High	High
+CNAG_03438-t26_1-p1	5	5	119.2	80.8	High	High	High	High
+CNAG_02237-t26_1-p1	2	2	104.6	95.4	High	High	High	High
+CNAG_00539-t26_1-p1	1	1	121.3	78.7	High	High	High	High
+CNAG_01885-t26_1-p1	3	3	87.8	112.2	High	High	High	High
+CNAG_01173-t26_1-p1	2	2	143.8	56.2	High	High	High	High
+CNAG_06549-t26_1-p1	2	2	60.6	139.4	High	High	High	High
+CNAG_07846-t26_1-p1	5	5	97.9	102.1	High	High	High	High
+CNAG_06353-t26_1-p1	3	3	105.4	94.6	High	High	High	High
+CNAG_04213-t26_1-p1	3	3	103.5	96.5	High	High	High	High
+CNAG_00142-t26_1-p1	4	4	101.7	98.3	High	Peak Found	High	High
+CNAG_01023-t26_1-p1	4	4	115.9	84.1	High	High	High	High
+CNAG_04503-t26_1-p1	1	1	126.6	73.4	Peak Found	High	High	High
+CNAG_02070-t26_1-p1	2	2	108.2	91.8	High	High	High	High
+CNAG_06185-t26_1-p1	3	3	98.1	101.9	High	High	High	High
+CNAG_03241-t26_1-p1	2	2	141.4	58.6	High	High	High	High
+CNAG_00641-t26_1-p1	2	2	129.2	70.8	High	High	High	High
+CNAG_05301-t26_1-p1	3	3	40.5	159.5	Peak Found	High	High	High
+CNAG_02994-t26_1-p1	3	3	60.5	139.5	High	High	High	High
+CNAG_07517-t26_1-p1	3	3	100	100	High	High	High	High
+CNAG_01241-t26_1-p1	2	2	139.5	60.5	High	High	High	High
+CNAG_03479-t26_1-p1	6	6	86.2	113.8	High	Peak Found	High	High
+CNAG_00777-t26_1-p1	3	3	107.6	92.4	High	Peak Found	High	High
+CNAG_05050-t26_1-p1	3	3	67.2	132.8	High	High	High	High
+CNAG_00239-t26_1-p1	3	3	160.4	39.6	High	High	High	Peak Found
+CNAG_02393-t26_1-p1	2	2	114.8	85.2	High	High	High	High
+CNAG_06666-t26_1-p1	3	3	121.9	78.1	High	High	High	High
+CNAG_04010-t26_1-p1	1	1	111.6	88.4	High	High	High	High
+CNAG_05599-t26_1-p1	2	2	98.7	101.3	High	High	High	High
+CNAG_01149-t26_1-p1	3	3	89.4	110.6	High	Peak Found	High	High
+CNAG_07967-t26_1-p1	4	4	133.1	66.9	High	High	High	High
+CNAG_07628-t26_1-p1	1	1	133.5	66.5	High	High	High	High
+CNAG_06754-t26_1-p1	2	2	64	136	Peak Found	High	High	High
+CNAG_00655-t26_1-p1	3	1			Not Found	High	Not Found	Not Found
+CNAG_00558-t26_1-p1	2	2	90	110	High	High	High	High
+CNAG_00072-t26_1-p1	1	1	97	103	High	Peak Found	High	High
+CNAG_01344-t26_1-p1	2	2	56.7	143.3	Not Found	High	High	High
+CNAG_00556-t26_2-p1	2	2	100.1	99.9	High	High	High	High
+CNAG_03463-t26_1-p1	3	3	113.9	86.1	High	High	High	High
+CNAG_03606-t26_1-p1	2	2	61.3	138.7	Peak Found	High	High	High
+CNAG_04584-t26_1-p1	2	2	70.8	129.2	High	High	High	High
+CNAG_00669-t26_1-p1	1	1	186.5	13.5	High	High	Peak Found	Not Found
+CNAG_00368-t26_1-p1	1	1	94	106	High	High	High	Peak Found
+CNAG_04364-t26_1-p1	2	2	74.3	125.7	High	Peak Found	High	High
+CNAG_07539-t26_1-p1	4	4	120.7	79.3	High	High	High	High
+CNAG_03184-t26_1-p1	2	2	139.8	60.2	High	High	High	High
+CNAG_05063-t26_1-p1	2	2	115.2	84.8	High	Peak Found	High	High
+CNAG_01183-t26_1-p1	3	3	50.3	149.7	High	High	High	High
+CNAG_03872-t26_1-p1	2	2	101.2	98.8	High	High	High	High
+CNAG_03775-t26_2-p1	2	2	133.2	66.8	High	High	High	High
+CNAG_03049-t26_1-p1	2	2	97	103	High	High	High	High
+CNAG_04040-t26_1-p1	2	2	66.7	133.3	Peak Found	High	High	High
+CNAG_04984-t26_1-p1	2	2	96.7	103.3	High	High	High	High
+CNAG_02280-t26_1-p1	1	1	131.9	68.1	High	High	High	High
+CNAG_00649-t26_1-p1	1	1	48.9	151.1	High	High	High	High
+CNAG_01817-t26_1-p1	2	2	115.4	84.6	High	High	High	High
+CNAG_07886-t26_1-p1	2	2	85.7	114.3	High	High	High	High
+CNAG_05848-t26_1-p1	3	3	111	89	High	High	High	High
+CNAG_01898-t26_1-p1	2	2	47.5	152.5	Not Found	High	High	High
+CNAG_04499-t26_1-p1	1	1	128.9	71.1	High	High	High	High
+CNAG_03203-t26_1-p1	1	1	110.8	89.2	High	High	High	High
+CNAG_05251-t26_1-p1	1	1	79.5	120.5	High	High	High	High
+CNAG_00294-t26_1-p1	1	1	98.8	101.2	High	High	High	High
+CNAG_05103-t26_1-p1	2	2	178.1	21.9	High	High	Peak Found	Not Found
+CNAG_04954-t26_1-p1	3	3	76.2	123.8	High	High	High	High
+CNAG_05216-t26_1-p1	2	2	31.2	168.8	High	Peak Found	High	High
+CNAG_00342-t26_1-p1	2	2	106.8	93.2	High	High	High	Peak Found
+CNAG_05896-t26_1-p1	2	2	112.1	87.9	High	High	High	High
+CNAG_00147-t26_1-p1	1	1	148	52	High	High	High	High
+CNAG_06125-t26_1-p1	4	4	176.7	23.3	High	High	Peak Found	Peak Found
+CNAG_06182-t26_1-p1	2	2	107	93	High	High	High	High
+CNAG_03023-t26_1-p1	1	1	200		High	Peak Found	High	High
+CNAG_02086-t26_1-p1	2	2	87.3	112.7	Peak Found	High	Peak Found	High
+CNAG_07941-t26_1-p1	2	2	103.7	96.3	Not Found	High	High	High
+CNAG_02139-t26_1-p1	3	3	87.9	112.1	High	High	High	High
+CNAG_06673-t26_1-p1	2	2	143.4	56.6	High	High	High	High
+CNAG_04208-t26_1-p1	2	2	169	31	High	High	High	High
+CNAG_03325-t26_1-p1	1	1	106.3	93.7	High	High	High	High
+CNAG_06404-t26_1-p1	2	2	68.5	131.5	High	High	High	High
+CNAG_06193-t26_1-p1	2	2	116.9	83.1	High	High	High	High
+CNAG_01835-t26_1-p1	3	3	200		High	Peak Found	High	Not Found
+CNAG_07940-t26_1-p1	2	2	155.8	44.2	High	High	High	High
+CNAG_01709-t26_1-p1	1	1	101.7	98.3	High	High	High	High
+CNAG_02698-t26_1-p1	2	2	67.2	132.8	Peak Found	Peak Found	High	High
+CNAG_07532-t26_1-p1	2	2	118.9	81.1	High	High	High	High
+CNAG_01360-t26_1-p1	2	2	63.1	136.9	High	High	High	High
+CNAG_02940-t26_1-p1	3	3	8.2	191.8	Peak Found	Peak Found	High	High
+CNAG_04864-t26_1-p1	5	5	79.4	120.6	High	High	High	High
+CNAG_01148-t26_1-p1	4	4	118.2	81.8	Peak Found	High	High	High
+CNAG_00099-t26_1-p1	1	1			Not Found	Not Found	High	High
+CNAG_05762-t26_1-p1	4	2	34.4	165.6	Not Found	High	High	Peak Found
+CNAG_01082-t26_1-p1	3	3	183.1	16.9	High	High	Not Found	High
+CNAG_06220-t26_1-p1	1	1	19.2	180.8	Peak Found	High	High	High
+CNAG_03297-t26_1-p1	1	1	65.6	134.4	High	High	High	High
+CNAG_02064-t26_1-p1	2	2	47.3	152.7	High	Peak Found	High	High
+CNAG_07464-t26_1-p1	3	3	46.6	153.4	High	High	High	High
+CNAG_06683-t26_1-p1	4	4	82.8	117.2	High	Peak Found	High	High
+CNAG_02754-t26_1-p1	2	2	185.6	14.4	High	High	High	Peak Found
+CNAG_01125-t26_1-p1	2	2	66.7	133.3	High	High	High	High
+CNAG_00606-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_04376-t26_1-p1	2	2	97.9	102.1	High	High	High	High
+CNAG_01863-t26_1-p1	2	2	68.2	131.8	High	Peak Found	High	High
+CNAG_00577-t26_1-p1	2	2	60.7	139.3	High	High	High	High
+CNAG_02468-t26_1-p1	1	1	139.8	60.2	High	High	High	High
+CNAG_04079-t26_1-p1	1	1	83.5	116.5	High	High	High	High
+CNAG_01263-t26_1-p1	1	1			High	High	High	Not Found
+CNAG_06142-t26_1-p1	1	1	184.3	15.7	High	Not Found	Peak Found	Peak Found
+CNAG_03565-t26_1-p1	1	1	74.1	125.9	High	High	High	High
+CNAG_03624-t26_1-p1	1	1			Not Found	Not Found	High	High
+CNAG_01556-t26_1-p1	1	1	140.5	59.5	High	High	High	High
+CNAG_00372-t26_1-p1	2	2	9.8	190.2	High	High	High	Not Found
+CNAG_01270-t26_1-p1	1	1	25.6	174.4	Peak Found	High	High	High
+CNAG_01150-t26_1-p1	2	2	52.7	147.3	High	High	High	High
+CNAG_07469-t26_1-p1	3	3	97.9	102.1	High	High	High	High
+CNAG_06896-t26_1-p1	1	1	70.8	129.2	High	High	High	High
+CNAG_04205-t26_2-p1	3	3	100.6	99.4	High	High	High	High
+CNAG_05199-t26_1-p1	2	2	85.1	114.9	High	High	High	High
+CNAG_00746-t26_1-p1	1	1	57.9	142.1	Peak Found	High	High	High
+CNAG_06740-t26_1-p1	3	3	91.4	108.6	High	High	High	High
+CNAG_05297-t26_1-p1	1	1			High	High	High	High
+CNAG_03612-t26_1-p1	1	1			Not Found	Not Found	High	High
+CNAG_06837-t26_1-p1	2	2	97.7	102.3	High	High	High	High
+CNAG_05437-t26_1-p1	2	2	76.6	123.4	Peak Found	High	High	High
+CNAG_02180-t26_1-p1	3	3	116.4	83.6	High	High	High	High
+CNAG_00665-t26_1-p1	1	1	25.7	174.3	High	Peak Found	High	High
+CNAG_04265-t26_1-p1	1	1	73.8	126.2	High	High	High	High
+CNAG_01704-t26_1-p1	2	2	119.1	80.9	High	High	High	High
+CNAG_07665-t26_1-p1	3	3	65.1	134.9	High	High	High	High
+CNAG_01574-t26_1-p1	2	2	103.8	96.2	High	High	High	High
+CNAG_01734-t26_1-p1	2	2	159.2	40.8	High	High	High	High
+CNAG_03356-t26_1-p1	2	2	123.1	76.9	High	Peak Found	High	Peak Found
+CNAG_01537-t26_1-p1	1	1		200	Not Found	Not Found	High	High
+CNAG_00346-t26_1-p1	1	1	58.1	141.9	High	High	High	High
+CNAG_00872-t26_1-p1	1	1	158.3	41.7	High	Not Found	High	Peak Found
+CNAG_04397-t26_1-p1	1	1	129.2	70.8	High	Peak Found	High	Peak Found
+CNAG_03058-t26_1-p1	3	3	125.1	74.9	High	High	High	High
+CNAG_03620-t26_1-p1	2	2	96	104	High	High	High	High
+CNAG_03188-t26_1-p1	1	1	123.7	76.3	High	Peak Found	High	Peak Found
+CNAG_03836-t26_2-p1	3	3	101	99	High	Peak Found	High	High
+CNAG_05117-t26_1-p1	1	1	117.9	82.1	High	High	High	High
+CNAG_01159-t26_1-p1	3	3	106.9	93.1	High	High	High	High
+CNAG_02298-t26_1-p1	1	1	97.8	102.2	High	High	High	High
+CNAG_01140-t26_1-p1	1	1	91.4	108.6	High	High	High	High
+CNAG_06192-t26_1-p1	2	2	152.5	47.5	High	Peak Found	High	Peak Found
+CNAG_02100-t26_1-p1	2	2	121.1	78.9	High	High	High	High
+CNAG_04659-t26_1-p1	3	3	105.6	94.4	High	High	High	High
+CNAG_05609-t26_1-p1	1	1	101.9	98.1	High	Peak Found	High	High
+CNAG_01021-t26_1-p1	1	1	135.4	64.6	High	Peak Found	High	High
+CNAG_05581-t26_1-p1	4	4	90.6	109.4	High	High	High	High
+CNAG_05314-t26_1-p1	2	2	130.6	69.4	High	High	High	Peak Found
+CNAG_07481-t26_1-p1	1	1	102.8	97.2	High	High	High	High
+CNAG_07372-t26_1-p1	1	1	123.5	76.5	Not Found	High	Peak Found	High
+CNAG_03282-t26_1-p1	1	1	137.9	62.1	High	High	High	High
+CNAG_06453-t26_1-p1	2	2	200		Not Found	High	Not Found	Not Found
+CNAG_03818-t26_1-p1	4	4	89.6	110.4	High	High	High	High
+CNAG_06746-t26_1-p1	3	3	57.1	142.9	High	High	High	High
+CNAG_02975-t26_1-p1	2	2	112.3	87.7	Peak Found	High	High	Peak Found
+CNAG_07848-t26_1-p1	1	1	106.2	93.8	High	Peak Found	High	High
+CNAG_06685-t26_1-p1	3	3	92.7	107.3	High	High	High	High
+CNAG_03338-t26_1-p1	1	1	99.1	100.9	High	High	High	High
+CNAG_00717-t26_1-p1	2	2	128.3	71.7	Peak Found	High	Peak Found	High
+CNAG_04433-t26_1-p1	4	4	120.5	79.5	High	High	High	High
+CNAG_03360-t26_1-p1	2	2	88.2	111.8	High	High	High	Peak Found
+CNAG_06903-t26_1-p1	2	2	105.8	94.2	High	Peak Found	High	High
+CNAG_05510-t26_2-p1	1	1	108.3	91.7	High	Peak Found	High	High
+CNAG_05480-t26_1-p1	1	1	73.7	126.3	High	High	High	High
+CNAG_03790-t26_1-p1	1	1	84.2	115.8	Not Found	High	High	High
+CNAG_07410-t26_1-p1	3	3	33.1	166.9	High	Peak Found	High	High
+CNAG_06770-t26_1-p1	2	2	140.6	59.4	High	High	High	Peak Found
+CNAG_01790-t26_1-p1	2	2	136.2	63.8	High	High	High	High
+CNAG_06473-t26_1-p1	4	4	59.4	140.6	High	High	High	High
+CNAG_05030-t26_1-p1	2	2	72.2	127.8	High	Peak Found	High	Peak Found
+CNAG_01464-t26_1-p1	3	3	157.3	42.7	High	High	High	Peak Found
+CNAG_06641-t26_1-p1	2	2	75.4	124.6	Peak Found	High	High	High
+CNAG_01943-t26_1-p1	3	3	114.4	85.6	High	Peak Found	High	High
+CNAG_03533-t26_1-p1	2	2	77.4	122.6	High	High	High	High
+CNAG_03539-t26_1-p1	1	1	83	117	High	Peak Found	High	High
+CNAG_00422-t26_1-p1	2	2	136.7	63.3	High	High	High	High
+CNAG_02001-t26_1-p1	3	3	28.6	171.4	Peak Found	High	High	High
+CNAG_01842-t26_1-p1	3	3	141.2	58.8	High	High	High	High
+CNAG_01412-t26_1-p1	2	2	170.9	29.1	High	High	High	Peak Found
+CNAG_05155-t26_1-p1	2	2	97.4	102.6	High	High	High	High
+CNAG_03553-t26_1-p1	1	1	38.6	161.4	Peak Found	High	High	High
+CNAG_06635-t26_1-p1	2	2	75.6	124.4	High	High	High	High
+CNAG_00718-t26_1-p1	3	3	137	63	High	High	High	High
+CNAG_01168-t26_1-p1	3	3	142.1	57.9	Peak Found	High	High	High
+CNAG_01084-t26_1-p1	2	2	157.8	42.2	High	Not Found	High	Peak Found
+CNAG_01178-t26_1-p1	1	1	142.2	57.8	High	High	High	High
+CNAG_04348-t26_1-p1	1	1	86.3	113.7	High	High	High	High
+CNAG_07420-t26_1-p1	1	1	134.5	65.5	High	High	High	Peak Found
+CNAG_06199-t26_1-p1	2	2	62.5	137.5	Peak Found	High	Peak Found	High
+CNAG_05292-t26_1-p1	2	2	86.3	113.7	High	High	High	High
+CNAG_05970-t26_1-p1	1	1	44.3	155.7	Peak Found	Peak Found	High	High
+CNAG_01970-t26_1-p1	2	2	98.5	101.5	High	High	High	Peak Found
+CNAG_01916-t26_1-p1	1	1	68.8	131.2	High	High	High	High
+CNAG_02683-t26_1-p1	2	2	152.2	47.8	High	High	High	High
+CNAG_05285-t26_1-p1	2	2	101.4	98.6	Peak Found	High	High	High
+CNAG_05139-t26_2-p1	3	3	111.2	88.8	High	High	High	High
+CNAG_03791-t26_1-p1	2	2	121.3	78.7	High	High	High	High
+CNAG_03017-t26_1-p1	5	5	55.1	144.9	High	High	High	High
+CNAG_07561-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_05939-t26_1-p1	1	1	104	96	Peak Found	High	Peak Found	High
+CNAG_06604-t26_1-p1	2	2		200	Not Found	High	High	Not Found
+CNAG_07593-t26_1-p1	2	2	156.2	43.8	High	High	High	Peak Found
+CNAG_01388-t26_1-p1	1	1	145.8	54.2	High	Peak Found	Peak Found	Peak Found
+CNAG_03419-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_04368-t26_1-p1	1	1	108	92	High	High	High	High
+CNAG_00500-t26_1-p1	1	1	103.6	96.4	High	High	High	Peak Found
+CNAG_00152-t26_1-p1	3	3	132.9	67.1	High	Peak Found	High	Peak Found
+CNAG_01984-t26_1-p1	3	3	108.2	91.8	Peak Found	High	Peak Found	High
+CNAG_05484-t26_1-p1	2	2	200		High	High	High	High
+CNAG_07878-t26_1-p1	3	3	61.8	138.2	High	High	High	High
+CNAG_01006-t26_1-p1	2	2	73	127	High	Peak Found	High	Not Found
+CNAG_02720-t26_1-p1	2	2	64.3	135.7	High	High	High	High
+CNAG_01375-t26_1-p1	2	2	103.6	96.4	High	High	High	High
+CNAG_04611-t26_1-p1	1	1	108.7	91.3	High	High	High	High
+CNAG_01203-t26_1-p1	1	1	178.7	21.3	High	High	Peak Found	Peak Found
+CNAG_06766-t26_1-p1	2	2	200		High	High	Not Found	High
+CNAG_00520-t26_1-p1	3	3	88.3	111.7	Peak Found	High	High	High
+CNAG_04603-t26_1-p1	2	2	103	97	High	High	High	High
+CNAG_02699-t26_1-p1	2	2	82.2	117.8	Peak Found	High	High	Peak Found
+CNAG_01414-t26_1-p1	2	2	80.4	119.6	High	High	High	High
+CNAG_03726-t26_1-p1	3	3	68.2	131.8	High	Peak Found	High	High
+CNAG_00386-t26_1-p1	2	2	19.7	180.3	Not Found	Peak Found	High	High
+CNAG_03337-t26_1-p1	1	1	68.8	131.2	Peak Found	High	High	High
+CNAG_01824-t26_1-p1	3	3	85.2	114.8	Peak Found	High	High	High
+CNAG_02038-t26_1-p1	1	1	190.7	9.3	Peak Found	High	Not Found	Peak Found
+CNAG_03373-t26_1-p1	1	1	84.5	115.5	High	High	High	High
+CNAG_00987-t26_1-p1	2	2	155.9	44.1	Not Found	High	High	High
+CNAG_02789-t26_1-p1	1	1	124.2	75.8	High	High	High	High
+CNAG_02004-t26_1-p1	1	1	119.1	80.9	High	Peak Found	Peak Found	High
+CNAG_03987-t26_1-p1	2	2	97.7	102.3	High	High	High	High
+CNAG_04151-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_04604-t26_1-p1	1	1	110.9	89.1	High	Peak Found	High	Peak Found
+CNAG_03605-t26_1-p1	2	2	69	131	Peak Found	High	High	High
+CNAG_02948-t26_1-p1	2	2	132.6	67.4	High	High	High	High
+CNAG_00093-t26_1-p1	1	1	197.3	2.7	High	High	Not Found	High
+CNAG_04221-t26_1-p1	2	2	120	80	High	High	High	Peak Found
+CNAG_04656-t26_2-p1	2	2	55.9	144.1	High	Peak Found	High	High
+CNAG_06469-t26_1-p1	2	2	71.8	128.2	High	Peak Found	High	High
+CNAG_04062-t26_1-p1	1	1	49.8	150.2	Peak Found	Peak Found	Peak Found	High
+CNAG_05826-t26_1-p1	3	3	68	132	Peak Found	High	High	High
+CNAG_04257-t26_1-p1	1	1	108.2	91.8	High	High	High	High
+CNAG_03056-t26_1-p1	1	1	200		High	High	Not Found	Not Found
+CNAG_00812-t26_1-p1	1	1	94.3	105.7	High	High	High	High
+CNAG_00594-t26_1-p1	3	3	139.4	60.6	High	High	High	High
+CNAG_01533-t26_1-p1	2	2	130.9	69.1	High	High	High	High
+CNAG_06313-t26_1-p1	1	1	61.4	138.6	High	Peak Found	High	High
+CNAG_05134-t26_1-p1	1	1	81.4	118.6	High	High	High	High
+CNAG_01115-t26_1-p1	1	1	163	37	High	High	High	High
+CNAG_07329-t26_1-p1	2	2	85.8	114.2	High	High	High	High
+CNAG_03100-t26_1-p1	2	2	48.8	151.2	Peak Found	High	High	High
+CNAG_07360-t26_1-p1	2	2	91.2	108.8	High	Peak Found	High	High
+CNAG_05343-t26_1-p1	3	3	124	76	High	High	High	High
+CNAG_00241-t26_1-p1	2	2	131.2	68.8	High	High	High	Peak Found
+CNAG_00166-t26_1-p1	2	2	173.6	26.4	High	High	High	High
+CNAG_01946-t26_1-p1	1	1	178.5	21.5	High	High	High	Peak Found
+CNAG_01815-t26_1-p1	2	2	149.7	50.3	High	High	High	Peak Found
+CNAG_00377-t26_1-p1	2	2	103.2	96.8	High	High	High	High
+CNAG_03116-t26_1-p1	1	1	81.3	118.7	High	Peak Found	Peak Found	Peak Found
+CNAG_03378-t26_1-p1	2	2	70.3	129.7	High	Peak Found	High	High
+CNAG_02401-t26_1-p1	1	1	200		High	High	Not Found	Not Found
+CNAG_03052-t26_1-p1	1	1	51.1	148.9	Not Found	Peak Found	High	High
+CNAG_02981-t26_1-p1	1	1	121.5	78.5	High	High	High	Peak Found
+CNAG_02912-t26_1-p1	3	3	35.8	164.2	High	High	High	High
+CNAG_02024-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_04432-t26_1-p1	2	2			High	High	Not Found	Not Found
+CNAG_06464-t26_1-p1	1	1	77.9	122.1	High	High	High	Peak Found
+CNAG_01616-t26_1-p1	2	2	120.9	79.1	High	High	Peak Found	Not Found
+CNAG_00764-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_07694-t26_1-p1	2	2	60.8	139.2	High	High	High	High
+CNAG_01833-t26_1-p1	1	1			High	Not Found	High	High
+CNAG_05371-t26_1-p1	1	1	70.7	129.3	High	High	High	High
+CNAG_07857-t26_1-p1	2	2	102.7	97.3	High	High	High	High
+CNAG_05737-t26_1-p1	2	2			High	Not Found	Not Found	Not Found
+CNAG_05384-t26_1-p1	1	1	74.3	125.7	High	High	High	Not Found
+CNAG_01660-t26_1-p1	1	1	107.8	92.2	Peak Found	High	Not Found	High
+CNAG_01029-t26_2-p1	1	1	20.2	179.8	High	Peak Found	High	High
+CNAG_02234-t26_1-p1	2	2	73	127	Peak Found	High	High	High
+CNAG_05172-t26_1-p1	2	2	39.9	160.1	Peak Found	High	High	High
+CNAG_07431-t26_1-p1	1	1	90.7	109.3	High	High	High	High
+CNAG_05884-t26_1-p1	1	1		200	Not Found	Not Found	High	Peak Found
+CNAG_00388-t26_1-p1	2	2	66.7	133.3	High	High	High	High
+CNAG_06151-t26_1-p1	1	1	76.1	123.9	High	High	High	High
+CNAG_04769-t26_1-p1	1	1	107.1	92.9	High	High	High	High
+CNAG_04316-t26_1-p1	3	3	200		High	High	High	Not Found
+CNAG_07536-t26_1-p1	1	1	93.3	106.7	High	High	High	High
+CNAG_06377-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_01491-t26_1-p1	1	1	128.6	71.4	High	High	Peak Found	High
+CNAG_05636-t26_1-p1	1	1	112.6	87.4	High	Peak Found	High	Peak Found
+CNAG_01101-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_02341-t26_1-p1	2	2	90.7	109.3	High	High	High	Not Found
+CNAG_05215-t26_1-p1	2	2			Not Found	Not Found	High	High
+CNAG_04760-t26_1-p1	3	3	36.8	163.2	Peak Found	High	High	High
+CNAG_01391-t26_1-p1	1	1	78.3	121.7	Peak Found	High	High	Peak Found
+CNAG_04612-t26_1-p1	1	1	149.6	50.4	High	Peak Found	Peak Found	Not Found
+CNAG_02121-t26_1-p1	1	1	120.7	79.3	High	High	High	High
+CNAG_04207-t26_1-p1	1	1	32	168	Peak Found	High	High	High
+CNAG_01189-t26_1-p1	1	1	142	58	High	High	High	Not Found
+CNAG_02092-t26_1-p1	1	1	134.7	65.3	High	Peak Found	High	High
+CNAG_00083-t26_1-p1	3	3	67.5	132.5	High	Peak Found	High	High
+CNAG_05903-t26_1-p1	1	1	200		High	Peak Found	High	Not Found
+CNAG_01848-t26_1-p1	2	2	28.5	171.5	Peak Found	Peak Found	High	High
+CNAG_03053-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_04640-t26_1-p1	1	1			Not Found	Not Found	High	High
+CNAG_04128-t26_1-p1	1	1	198.1	1.9	Not Found	High	Peak Found	Peak Found
+CNAG_07333-t26_1-p1	1	1	93.4	106.6	Peak Found	High	High	High
+CNAG_00438-t26_1-p1	1	1	56.3	143.7	Peak Found	Peak Found	High	High
+CNAG_00116-t26_1-p1	2	2	183.7	16.3	Not Found	High	Peak Found	Peak Found
+CNAG_04575-t26_1-p1	2	2	22.3	177.7	Peak Found	High	High	High
+CNAG_07381-t26_1-p1	1	1	200		High	High	High	High
+CNAG_06578-t26_1-p1	2	2	127.2	72.8	Peak Found	High	Peak Found	High
+CNAG_07717-t26_1-p1	1	1	36.9	163.1	Not Found	Peak Found	High	Not Found
+CNAG_03873-t26_1-p1	1	1	93.6	106.4	High	High	High	High
+CNAG_05817-t26_1-p1	1	1	62.7	137.3	High	High	High	High
+CNAG_04322-t26_1-p1	2	2	200		Not Found	High	Not Found	Not Found
+CNAG_06460-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_01448-t26_1-p1	2	2	112.6	87.4	High	High	High	High
+CNAG_04957-t26_1-p1	2	2	101.3	98.7	High	High	Peak Found	High
+CNAG_01941-t26_1-p1	2	2		200	High	Not Found	High	High
+CNAG_03139-t26_1-p1	1	1	141.1	58.9	High	High	Peak Found	Peak Found
+CNAG_00174-t26_1-p1	2	2	42	158	High	Peak Found	High	High
+CNAG_05782-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_07681-t26_1-p1	1	1	151.3	48.7	Peak Found	High	Peak Found	Not Found
+CNAG_01991-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_00683-t26_1-p1	1	1		200	Not Found	Not Found	High	High
+CNAG_07374-t26_1-p1	2	2	47.7	152.3	Not Found	High	High	Peak Found
+CNAG_03267-t26_1-p1	1	1	200		Peak Found	High	High	High
+CNAG_05388-t26_1-p1	2	2	130.3	69.7	High	High	High	High
+CNAG_03976-t26_1-p1	1	1	70.6	129.4	Peak Found	Peak Found	High	Not Found
+CNAG_04244-t26_1-p1	2	2	139.9	60.1	High	High	High	High
+CNAG_06897-t26_1-p1	2	2	63.5	136.5	Peak Found	High	High	High
+CNAG_05642-t26_1-p1	1	1	80.3	119.7	High	Peak Found	High	High
+CNAG_06648-t26_1-p1	1	1	134.9	65.1	Peak Found	Peak Found	High	Peak Found
+CNAG_00567-t26_1-p1	1	1	67.5	132.5	High	High	High	High
+CNAG_00334-t26_1-p1	2	2	99.4	100.6	Peak Found	High	High	Peak Found
+CNAG_03314-t26_2-p1	2	2	86.8	113.2	Peak Found	Peak Found	High	High
+CNAG_02695-t26_1-p1	1	1	60.5	139.5	High	Peak Found	High	High
+CNAG_03155-t26_1-p1	2	2	96.6	103.4	High	High	High	High
+CNAG_05781-t26_1-p1	1	1	130.6	69.4	High	High	High	High
+CNAG_04203-t26_1-p1	1	1	134.7	65.3	High	High	High	High
+CNAG_04131-t26_1-p1	1	1	108.6	91.4	High	High	High	High
+CNAG_06158-t26_1-p1	3	3	57.8	142.2	High	High	High	Peak Found
+CNAG_06576-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_05360-t26_1-p1	2	2	111	89	Peak Found	High	Peak Found	High
+CNAG_05235-t26_1-p1	2	2	73.8	126.2	Peak Found	High	Peak Found	Not Found
+CNAG_05276-t26_1-p1	2	2	164.1	35.9	High	Peak Found	Peak Found	High
+CNAG_02739-t26_1-p1	1	1	139.2	60.8	Not Found	High	Peak Found	Not Found
+CNAG_05446-t26_1-p1	1	1		200	Not Found	Not Found	High	Peak Found
+CNAG_06699-t26_1-p1	3	3	200		High	High	Not Found	Not Found
+CNAG_06826-t26_1-p1	1	1	174.7	25.3	Peak Found	High	Peak Found	Peak Found
+CNAG_00686-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_04976-t26_1-p1	1	1			Not Found	Not Found	High	High
+CNAG_02801-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_05404-t26_3-p1	2	2	152.3	47.7	Peak Found	High	High	High
+CNAG_03670-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_03118-t26_1-p1	2	2	118.5	81.5	High	Peak Found	Peak Found	High
+CNAG_03003-t26_1-p1	2	2	60.9	139.1	High	Peak Found	High	Peak Found
+CNAG_01727-t26_1-p1	1	1	117.2	82.8	Peak Found	High	High	Peak Found
+CNAG_01938-t26_1-p1	1	1	144.7	55.3	Peak Found	High	High	High
+CNAG_01890-t26_1-p1	1	1	66.5	133.5	Peak Found	Not Found	High	Peak Found
+CNAG_00829-t26_1-p1	1	1	155.7	44.3	Not Found	High	Peak Found	Peak Found
+CNAG_01593-t26_1-p1	1	1	129.8	70.2	High	High	High	High
+CNAG_01575-t26_1-p1	1	1	81.6	118.4	High	High	High	High
+CNAG_07631-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_07413-t26_1-p1	1	1	77	123	Peak Found	High	High	High
+CNAG_00065-t26_1-p1	2	2	95	105	Peak Found	High	High	High
+CNAG_04879-t26_1-p1	1	1	85.5	114.5	High	Peak Found	High	High
+CNAG_02989-t26_1-p1	1	1	145.3	54.7	High	High	High	High
+CNAG_03308-t26_1-p1	1	1	136.9	63.1	High	High	High	High
+CNAG_02983-t26_1-p1	2	2	48.6	151.4	Peak Found	Peak Found	High	High
+CNAG_00390-t26_1-p1	2	2	127.5	72.5	Peak Found	High	Peak Found	High
+CNAG_06400-t26_1-p1	3	3	144.2	55.8	High	High	Peak Found	High
+CNAG_03788-t26_1-p1	1	1	121.4	78.6	High	High	Peak Found	Not Found
+CNAG_00415-t26_1-p1	1	1	86.2	113.8	Peak Found	Peak Found	High	High
+CNAG_02262-t26_1-p1	1	1	73.6	126.4	Peak Found	Peak Found	High	Peak Found
+CNAG_00156-t26_1-p1	1	1	100.1	99.9	Peak Found	High	High	High
+CNAG_04127-t26_1-p1	1	1	200		High	High	Not Found	Not Found
+CNAG_00650-t26_1-p1	2	2	110	90	High	High	High	High
+CNAG_06114-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_01180-t26_1-p1	1	1		200	Not Found	Not Found	High	Peak Found
+CNAG_03868-t26_1-p1	1	1	20.1	179.9	Peak Found	Peak Found	Peak Found	High
+CNAG_05798-t26_1-p1	1	1	10.3	189.7	Peak Found	Not Found	Peak Found	High
+CNAG_04745-t26_1-p1	1	1		200	High	Not Found	High	Peak Found
+CNAG_04177-t26_1-p1	1	1	200		High	Not Found	Not Found	Not Found
+CNAG_01492-t26_1-p1	1	1	21.8	178.2	Peak Found	High	High	High
+CNAG_01107-t26_1-p1	1	1	97.9	102.1	High	Peak Found	High	High
+CNAG_02197-t26_1-p1	2	2	128	72	High	High	High	Peak Found
+CNAG_00008-t26_1-p1	1	1	112.8	87.2	High	Peak Found	High	High
+CNAG_06600-t26_1-p1	2	2	90.8	109.2	High	High	High	High
+CNAG_02188-t26_1-p1	1	1	37.9	162.1	Peak Found	High	High	High
+CNAG_03689-t26_1-p1	1	1	36	164	Peak Found	Peak Found	High	High
+CNAG_02281-t26_1-p1	2	2	76	124	High	Peak Found	High	High
+CNAG_03700-t26_1-p1	2	2	38.1	161.9	Peak Found	High	High	High
+CNAG_05703-t26_1-p1	2	2	95	105	Peak Found	High	High	High
+CNAG_03959-t26_1-p1	1	1		200	Not Found	Not Found	Not Found	High
+CNAG_03699-t26_1-p1	1	1	123.8	76.2	Peak Found	High	Peak Found	Peak Found
+CNAG_02962-t26_1-p1	3	3	57.9	142.1	High	Peak Found	High	High
+CNAG_03682-t26_1-p1	2	2	193.3	6.7	Peak Found	High	Peak Found	Peak Found
+CNAG_06647-t26_1-p1	1	1	112.3	87.7	High	Peak Found	High	High
+CNAG_06603-t26_1-p1	2	2	93.5	106.5	High	Peak Found	High	High
+CNAG_03072-t26_1-p1	2	2	200		Peak Found	High	Not Found	Not Found
+CNAG_03109-t26_1-p1	1	1	171	29	High	Not Found	Peak Found	Peak Found
+CNAG_04068-t26_1-p1	1	1	65.4	134.6	High	High	High	High
+CNAG_01251-t26_1-p1	2	2	27.3	172.7	Not Found	Peak Found	High	High
+CNAG_00716-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_02114-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_05690-t26_1-p1	2	2		200	Not Found	Not Found	Not Found	High
+CNAG_04694-t26_1-p1	1	1	93.2	106.8	High	High	High	High
+CNAG_01117-t26_1-p1	2	2	116.3	83.7	High	High	High	High
+CNAG_02564-t26_1-p1	1	1	86.5	113.5	High	Peak Found	Peak Found	Peak Found
+CNAG_02419-t26_1-p1	1	1	104.9	95.1	Not Found	Peak Found	High	High
+CNAG_03008-t26_1-p1	1	1	165.3	34.7	High	Peak Found	High	Peak Found
+CNAG_00361-t26_1-p1	2	2	40.9	159.1	Peak Found	High	High	High
+CNAG_00482-t26_1-p1	1	1		200	Not Found	Not Found	High	High
+CNAG_06747-t26_1-p1	1	1	126.7	73.3	Peak Found	High	High	High
+CNAG_06920-t26_1-p1	1	1	123.9	76.1	High	Peak Found	High	Peak Found
+CNAG_05419-t26_1-p1	1	1	142.4	57.6	High	High	Not Found	Peak Found
+CNAG_03161-t26_1-p1	1	1	165.6	34.4	Peak Found	High	Peak Found	Peak Found
+CNAG_07530-t26_1-p1	2	2	112.6	87.4	High	High	High	Peak Found
+CNAG_01583-t26_1-p1	1	1	62.7	137.3	High	High	High	High
+CNAG_03983-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_03815-t26_1-p1	2	2	200		High	High	Not Found	Not Found
+CNAG_02454-t26_1-p1	1	1	55.2	144.8	Not Found	High	High	High
+CNAG_02359-t26_1-p1	1	1	146.2	53.8	Not Found	High	Peak Found	Peak Found
+CNAG_06242-t26_1-p1	1	1	162.9	37.1	High	Peak Found	Not Found	Peak Found
+CNAG_03603-t26_1-p1	2	2	170.5	29.5	High	High	Peak Found	Not Found
+CNAG_05887-t26_1-p1	1	1	111.1	88.9	High	High	High	High
+CNAG_04398-t26_1-p1	2	2	115.1	84.9	High	Peak Found	Peak Found	High
+CNAG_08002-t26_1-p1	2	2	121.3	78.7	High	High	Not Found	High
+CNAG_01738-t26_1-p1	1	1	28.8	171.2	High	Peak Found	High	High
+CNAG_00034-t26_1-p1	1	1	191.1	8.9	Not Found	High	Peak Found	Not Found
+CNAG_00512-t26_1-p1	1	1	42.5	157.5	Peak Found	Not Found	Peak Found	High
+CNAG_04282-t26_1-p1	1	1	75.9	124.1	Peak Found	High	Peak Found	High
+CNAG_05359-t26_1-p1	1	1	135.3	64.7	High	Not Found	Not Found	High
+CNAG_04152-t26_1-p1	1	1	100.8	99.2	High	Peak Found	High	High
+CNAG_07512-t26_1-p1	1	1	137.1	62.9	Peak Found	Peak Found	High	High
+CNAG_06756-t26_1-p1	1	1	129.5	70.5	Peak Found	High	High	High
+CNAG_00091-t26_1-p1	2	2	59.4	140.6	Peak Found	Peak Found	High	High
+CNAG_03884-t26_1-p1	2	2	149.7	50.3	Peak Found	High	Peak Found	Peak Found
+CNAG_01428-t26_1-p1	2	2	200		High	High	Not Found	Not Found
+CNAG_04150-t26_1-p1	1	1	177.9	22.1	Not Found	High	Peak Found	Peak Found
+CNAG_03075-t26_1-p1	1	1	90	110	Peak Found	High	High	Peak Found
+CNAG_07347-t26_1-p1	1	1		200	Not Found	Not Found	Not Found	High
+CNAG_04786-t26_1-p1	2	2	73.4	126.6	Peak Found	Peak Found	High	High
+CNAG_01528-t26_1-p1	1	1	74	126	High	Peak Found	Peak Found	Peak Found
+CNAG_00424-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_02291-t26_1-p1	1	1	131.4	68.6	High	High	High	High
+CNAG_03383-t26_1-p1	1	1	57.1	142.9	Peak Found	High	Peak Found	High
+CNAG_01576-t26_1-p1	1	1	163	37	High	High	Peak Found	High
+CNAG_05768-t26_1-p1	2	2	93	107	High	Peak Found	High	High
+CNAG_02432-t26_1-p1	1	1	108.6	91.4	High	Peak Found	High	Peak Found
+CNAG_00737-t26_1-p1	1	1	103.9	96.1	High	High	High	High
+CNAG_04004-t26_1-p1	2	2	113.1	86.9	Not Found	High	High	Peak Found
+CNAG_06165-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_02205-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_03213-t26_2-p1	1	1			High	Not Found	High	High
+CNAG_05138-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_03426-t26_1-p1	1	1	114.7	85.3	High	Peak Found	High	High
+CNAG_07667-t26_1-p1	1	1	21.1	178.9	Not Found	Peak Found	High	High
+CNAG_03826-t26_1-p1	1	1	92.4	107.6	High	Peak Found	High	Peak Found
+CNAG_03655-t26_1-p1	2	2	108.5	91.5	High	High	High	High
+CNAG_05552-t26_1-p1	1	1	66.3	133.7	Peak Found	Peak Found	Peak Found	High
+CNAG_02269-t26_1-p1	1	1			Not Found	Not Found	High	High
+CNAG_06282-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_05963-t26_1-p1	1	1	115.6	84.4	Peak Found	Peak Found	High	High
+CNAG_07375-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_02579-t26_2-p1	1	1	99.4	100.6	Not Found	High	Peak Found	Not Found
+CNAG_02773-t26_1-p1	2	2	91	109	Peak Found	High	High	High
+CNAG_00785-t26_1-p1	2	2	200		Peak Found	High	High	Not Found
+CNAG_00193-t26_1-p1	1	1	75.9	124.1	High	High	High	High
+CNAG_05835-t26_2-p1	1	1	51.5	148.5	High	High	High	High
+CNAG_02185-t26_1-p1	1	1			High	High	Not Found	Not Found
+CNAG_03839-t26_3-p1	1	1	99.6	100.4	Peak Found	High	Peak Found	High
+CNAG_04450-t26_1-p1	1	1	86.3	113.7	High	Peak Found	High	High
+CNAG_04253-t26_1-p1	1	1	159.8	40.2	High	Not Found	High	Peak Found
+CNAG_01614-t26_1-p1	2	2	171.6	28.4	High	Peak Found	Peak Found	Peak Found
+CNAG_05613-t26_1-p1	1	1	102.8	97.2	Peak Found	Peak Found	High	Peak Found
+CNAG_01340-t26_1-p1	1	1	103.5	96.5	High	Peak Found	Peak Found	High
+CNAG_05132-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_03840-t26_1-p1	2	2	108.8	91.2	High	Peak Found	High	Peak Found
+CNAG_02726-t26_1-p1	1	1	82.5	117.5	High	High	High	High
+CNAG_02153-t26_1-p1	1	1	195.3	4.7	High	High	High	Peak Found
+CNAG_02882-t26_1-p1	1	1	122.6	77.4	High	High	Peak Found	High
+CNAG_06545-t26_1-p1	1	1	20.7	179.3	Peak Found	High	Peak Found	High
+CNAG_07411-t26_1-p1	1	1	115.8	84.2	Peak Found	High	High	High
+CNAG_04165-t26_1-p1	1	1	107.9	92.1	High	Peak Found	High	High
+CNAG_03958-t26_1-p1	1	1	80.1	119.9	High	Peak Found	High	High
+CNAG_06606-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_00078-t26_1-p1	2	2	140.4	59.6	High	High	Peak Found	High
+CNAG_05000-t26_1-p1	1	1	49.7	150.3	High	Peak Found	High	High
+CNAG_01735-t26_1-p1	1	1		200	Not Found	Not Found	High	Peak Found
+CNAG_05845-t26_1-p1	2	2	53	147	Peak Found	High	High	Not Found
+CNAG_01169-t26_1-p1	1	1	59.1	140.9	Peak Found	High	High	Peak Found
+CNAG_03694-t26_1-p1	1	1			Not Found	High	High	High
+CNAG_06223-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_04904-t26_1-p1	1	1	77.5	122.5	High	High	High	High
+CNAG_00570-t26_1-p1	2	2	52.3	147.7	Peak Found	High	High	Peak Found
+CNAG_01531-t26_1-p1	1	1	187.3	12.7	High	Peak Found	Peak Found	Not Found
+CNAG_01457-t26_1-p1	1	1	154.5	45.5	Peak Found	High	High	High
+CNAG_05975-t26_1-p1	2	2	200		High	High	Not Found	Not Found
+CNAG_03121-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_04816-t26_1-p1	1	1	96.8	103.2	Peak Found	High	Peak Found	Peak Found
+CNAG_04283-t26_1-p1	1	1	91.9	108.1	Peak Found	High	High	High
+CNAG_06552-t26_1-p1	1	1	46.5	153.5	High	Peak Found	High	High
+CNAG_07936-t26_1-p1	2	2	123.1	76.9	High	Peak Found	High	High
+CNAG_01609-t26_1-p1	1	1	125.4	74.6	High	High	High	Peak Found
+CNAG_01845-t26_1-p1	1	1	35.7	164.3	Not Found	Peak Found	High	High
+CNAG_04755-t26_1-p1	1	1	81.9	118.1	High	High	Peak Found	High
+CNAG_03892-t26_1-p1	1	1	148.3	51.7	Peak Found	High	Not Found	Peak Found
+CNAG_02507-t26_1-p1	1	1	53.6	146.4	High	High	High	High
+CNAG_02134-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_06627-t26_1-p1	2	2	159.9	40.1	High	High	Peak Found	High
+CNAG_04381-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_07689-t26_1-p1	3	3	126.5	73.5	High	High	Peak Found	Peak Found
+CNAG_07334-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_02165-t26_1-p1	2	2	125.4	74.6	High	Peak Found	High	High
+CNAG_01632-t26_1-p1	1	1	125.1	74.9	High	Peak Found	Peak Found	Peak Found
+CNAG_00719-t26_1-p1	1	1	24.3	175.7	Not Found	Peak Found	High	Peak Found
+CNAG_03168-t26_1-p1	1	1	64.9	135.1	Peak Found	High	High	Peak Found
+CNAG_02974-t26_1-p1	1	1	58.9	141.1	Peak Found	High	Peak Found	Not Found
+CNAG_03114-t26_1-p1	1	1	122.2	77.8	Peak Found	High	Peak Found	Not Found
+CNAG_02041-t26_1-p1	1	1	66.4	133.6	High	High	High	High
+CNAG_01523-t26_1-p1	1	1	17	183	Peak Found	Not Found	High	High
+CNAG_04211-t26_1-p1	1	1	72.2	127.8	High	Peak Found	High	High
+CNAG_03577-t26_1-p1	1	1	25.7	174.3	Peak Found	High	High	High
+CNAG_05074-t26_1-p1	1	1	93.3	106.7	High	Peak Found	High	Peak Found
+CNAG_07688-t26_1-p1	1	1	107.9	92.1	High	Peak Found	High	High
+CNAG_01924-t26_1-p1	1	1	49.9	150.1	High	High	High	High
+CNAG_04444-t26_1-p1	2	2	61.7	138.3	High	High	High	High
+CNAG_06796-t26_1-p1	2	2	107.3	92.7	High	High	High	High
+CNAG_04721-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_01212-t26_1-p1	1	1	26.8	173.2	Peak Found	Peak Found	Not Found	High
+CNAG_07382-t26_1-p1	1	1		200	Not Found	Not Found	Peak Found	High
+CNAG_07415-t26_1-p1	2	2	141.8	58.2	High	Peak Found	High	Peak Found
+CNAG_07321-t26_1-p1	1	1	100.7	99.3	High	Peak Found	High	Peak Found
+CNAG_05749-t26_1-p1	1	1	157.3	42.7	High	Not Found	Peak Found	High
+CNAG_03874-t26_1-p1	1	1	91.4	108.6	Peak Found	Peak Found	High	Peak Found
+CNAG_06591-t26_1-p1	2	2	127.4	72.6	High	Peak Found	High	Peak Found
+CNAG_02751-t26_1-p1	1	1	55.3	144.7	Peak Found	High	High	High
+CNAG_02502-t26_1-p1	1	1	39.2	160.8	Peak Found	Peak Found	High	High
+CNAG_04479-t26_1-p1	1	1	112.4	87.6	High	High	High	High
+CNAG_01919-t26_1-p1	1	1	45.2	154.8	Peak Found	Peak Found	Peak Found	High
+CNAG_01376-t26_1-p1	2	2	62.6	137.4	High	Peak Found	High	High
+CNAG_04796-t26_1-p1	1	1	69	131	Peak Found	Peak Found	High	High
+CNAG_02332-t26_1-p1	1	1	34.4	165.6	Not Found	Peak Found	High	High
+CNAG_04710-t26_1-p1	1	1	94.8	105.2	Peak Found	Peak Found	High	Not Found
+CNAG_00119-t26_1-p1	1	1	43.5	156.5	Not Found	Peak Found	High	Not Found
+CNAG_04090-t26_1-p1	1	1	67.8	132.2	Peak Found	High	High	High
+CNAG_06412-t26_1-p1	1	1	200		High	Peak Found	High	Not Found
+CNAG_02505-t26_1-p1	1	1	87.2	112.8	Not Found	High	High	High
+CNAG_04118-t26_1-p1	1	1	137.5	62.5	High	High	High	High
+CNAG_02666-t26_1-p1	1	1	36	164	Not Found	Peak Found	Peak Found	High
+CNAG_06450-t26_1-p1	1	1	36.4	163.6	Peak Found	High	High	High
+CNAG_05517-t26_1-p1	1	1	114.7	85.3	Not Found	High	Peak Found	Peak Found
+CNAG_01025-t26_1-p1	1	1	116.8	83.2	Peak Found	High	High	High
+CNAG_03409-t26_1-p1	1	1	69.1	130.9	Not Found	High	Peak Found	High
+CNAG_00741-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_01300-t26_1-p1	1	1	129.4	70.6	Peak Found	High	Peak Found	Not Found
+CNAG_07769-t26_1-p1	1	1	62	138	Peak Found	High	High	High
+CNAG_02259-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_01983-t26_1-p1	1	1	62.6	137.4	Peak Found	Peak Found	Peak Found	High
+CNAG_02209-t26_1-p1	1	1		200	Not Found	Not Found	Peak Found	High
+CNAG_04821-t26_1-p1	1	1	16.2	183.8	Peak Found	Peak Found	High	Peak Found
+CNAG_02220-t26_1-p1	1	1	200		High	High	Not Found	Not Found
+CNAG_07951-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_05590-t26_1-p1	2	2	24.8	175.2	High	Peak Found	Peak Found	High
+CNAG_01477-t26_1-p1	1	1	16.7	183.3	Peak Found	Peak Found	High	High
+CNAG_01322-t26_1-p1	1	1			Not Found	Not Found	High	High
+CNAG_04069-t26_1-p1	1	1	195.1	4.9	Not Found	High	Peak Found	Peak Found
+CNAG_01644-t26_1-p1	1	1	8.9	191.1	Peak Found	Peak Found	High	High
+CNAG_02179-t26_1-p1	1	1	74.2	125.8	Peak Found	Peak Found	High	High
+CNAG_01094-t26_1-p1	1	1	76.2	123.8	Not Found	High	Peak Found	Peak Found
+CNAG_01864-t26_1-p1	1	1		200	Not Found	Not Found	Peak Found	High
+CNAG_04270-t26_1-p1	1	1	155.3	44.7	Not Found	High	Peak Found	Not Found
+CNAG_01142-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_04875-t26_1-p1	1	1	99.7	100.3	High	Not Found	Not Found	Peak Found
+CNAG_00523-t26_1-p1	1	1	200		High	Not Found	Not Found	Not Found
+CNAG_04224-t26_1-p1	1	1	44.1	155.9	Not Found	Peak Found	Peak Found	High
+CNAG_03303-t26_1-p1	1	1	200		High	High	Not Found	Not Found
+CNAG_02453-t26_1-p1	1	1	14.6	185.4	Not Found	Peak Found	High	High
+CNAG_02182-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_06447-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_01195-t26_1-p1	1	1	67.6	132.4	Peak Found	High	High	High
+CNAG_02700-t26_2-p1	1	1	200		Not Found	High	High	Not Found
+CNAG_03248-t26_1-p1	1	1	55.2	144.8	Peak Found	Peak Found	High	High
+CNAG_01119-t26_1-p1	1	1	114	86	High	High	Peak Found	High
+CNAG_04772-t26_1-p1	1	1	72.3	127.7	Peak Found	High	Peak Found	High
+CNAG_01400-t26_1-p1	1	1	48	152	High	High	High	High
+CNAG_07745-t26_1-p1	1	1	172.9	27.1	Not Found	High	Peak Found	Not Found
+CNAG_05684-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_01164-t26_1-p1	1	1	59.4	140.6	High	High	High	High
+CNAG_02748-t26_1-p1	1	1	64.9	135.1	High	High	High	High
+CNAG_00130-t26_1-p1	1	1	38.4	161.6	Peak Found	High	Peak Found	High
+CNAG_03183-t26_1-p1	1	1	12.1	187.9	Peak Found	Not Found	Not Found	High
+CNAG_04962-t26_1-p1	1	1	77.4	122.6	Peak Found	Peak Found	High	Peak Found
+CNAG_04441-t26_1-p1	1	1	75.6	124.4	Peak Found	High	Peak Found	High
+CNAG_06693-t26_1-p1	1	1	87.8	112.2	Peak Found	High	Peak Found	Peak Found
+CNAG_01918-t26_1-p1	1	1	98.8	101.2	High	High	High	High
+CNAG_04197-t26_1-p1	1	1	49	151	Not Found	Peak Found	High	Peak Found
+CNAG_00043-t26_1-p1	1	1	54	146	Not Found	Peak Found	High	High
+CNAG_05308-t26_2-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_03205-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_04355-t26_1-p1	1	1	110.7	89.3	High	High	Peak Found	Peak Found
+CNAG_02545-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_02817-t26_1-p1	1	1	44.1	155.9	High	High	High	High
+CNAG_01179-t26_1-p1	1	1	63.6	136.4	Peak Found	Peak Found	High	Peak Found
+CNAG_04367-t26_1-p1	1	1	80.2	119.8	Peak Found	Peak Found	High	Peak Found
+CNAG_04686-t26_1-p1	1	1	46.3	153.7	High	Peak Found	Peak Found	Peak Found
+CNAG_00249-t26_1-p1	1	1	58.6	141.4	Peak Found	High	Not Found	High
+CNAG_01404-t26_1-p1	1	1	121.7	78.3	High	Peak Found	High	High
+CNAG_04106-t26_1-p1	1	1	90	110	Peak Found	Peak Found	High	Peak Found
+CNAG_05353-t26_1-p1	1	1	47.6	152.4	Peak Found	Peak Found	High	High
+CNAG_03781-t26_1-p1	1	1	68.9	131.1	High	Peak Found	Peak Found	Peak Found
+CNAG_00803-t26_1-p1	1	1	200		Not Found	High	Not Found	High
+CNAG_01418-t26_1-p1	1	1	41	159	Peak Found	Peak Found	Peak Found	High
+CNAG_06160-t26_1-p1	1	1	80	120	High	Peak Found	Not Found	Peak Found
+CNAG_03284-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_02338-t26_1-p1	1	1	114.5	85.5	Peak Found	High	Peak Found	Not Found
+CNAG_03950-t26_1-p1	2	2	87.4	112.6	Peak Found	High	High	High
+CNAG_01716-t26_1-p1	1	1	68.5	131.5	High	High	High	High
+CNAG_04958-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_06797-t26_1-p1	1	1	88	112	Peak Found	High	Peak Found	Peak Found
+CNAG_06661-t26_1-p1	1	1	51.9	148.1	Peak Found	Peak Found	Not Found	High
+CNAG_05352-t26_1-p1	1	1	80.4	119.6	Peak Found	High	Peak Found	High
+CNAG_05485-t26_1-p1	1	1	86.8	113.2	High	High	High	High
+CNAG_02606-t26_1-p1	1	1	105.6	94.4	High	Peak Found	Peak Found	Peak Found
+CNAG_05243-t26_1-p1	1	1	27.4	172.6	Peak Found	Peak Found	High	Not Found
+CNAG_01896-t26_1-p1	1	1	7	193	Not Found	High	Peak Found	Peak Found
+CNAG_02702-t26_1-p1	1	1	81.7	118.3	High	Peak Found	High	High
+CNAG_01282-t26_1-p1	1	1	90.9	109.1	Peak Found	Peak Found	High	Peak Found
+CNAG_05520-t26_1-p1	1	1	121.8	78.2	High	Peak Found	Peak Found	Peak Found
+CNAG_01445-t26_1-p1	1	1	75.4	124.6	High	Peak Found	Peak Found	High
+CNAG_04895-t26_1-p1	1	1	110.6	89.4	Peak Found	High	Not Found	Peak Found
+CNAG_05196-t26_1-p1	1	1	59	141	Peak Found	High	Peak Found	High
+CNAG_02219-t26_1-p1	1	1	70.4	129.6	High	Not Found	High	High
+CNAG_01880-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_00547-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_02941-t26_2-p1	1	1	13.2	186.8	Not Found	Peak Found	Not Found	High
+CNAG_06122-t26_1-p1	1	1	139	61	Peak Found	Peak Found	High	Peak Found
+CNAG_06800-t26_1-p1	1	1	55.3	144.7	Not Found	Peak Found	High	Not Found
+CNAG_02686-t26_1-p1	1	1	97.8	102.2	Peak Found	High	Peak Found	High
+CNAG_03768-t26_1-p1	1	1	52.3	147.7	Not Found	Peak Found	High	High
+CNAG_02312-t26_1-p1	1	1	87.4	112.6	Not Found	High	High	High
+CNAG_06401-t26_1-p1	1	1	85.8	114.2	Peak Found	High	Peak Found	High
+CNAG_02032-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_02128-t26_1-p1	1	1	108.6	91.4	Not Found	High	Peak Found	Peak Found
+CNAG_05431-t26_1-p1	1	1	148.9	51.1	High	High	Peak Found	Peak Found
+CNAG_06550-t26_1-p1	1	1	31.1	168.9	Peak Found	Peak Found	High	Peak Found
+CNAG_01859-t26_1-p1	1	1	200		High	Not Found	Not Found	Not Found
+CNAG_00497-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_04445-t26_1-p1	1	1	164.9	35.1	Peak Found	Peak Found	High	High
+CNAG_00604-t26_1-p1	1	1	122.3	77.7	High	High	High	High
+CNAG_01253-t26_1-p1	1	1	51.3	148.7	High	Peak Found	High	High
+CNAG_01087-t26_1-p1	1	1	139.6	60.4	High	High	High	High
+CNAG_04053-t26_1-p1	1	1	46.7	153.3	Not Found	High	High	High
+CNAG_03526-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_01809-t26_1-p1	1	1	9.6	190.4	Peak Found	Peak Found	High	High
+CNAG_03486-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_02080-t26_2-p1	1	1	88	112	Peak Found	High	Peak Found	High
+CNAG_03905-t26_1-p1	1	1	55.8	144.2	High	Peak Found	High	Peak Found
+CNAG_06352-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_07863-t26_1-p1	1	1	98.4	101.6	High	Peak Found	High	High
+CNAG_03667-t26_1-p1	1	1	38.7	161.3	Not Found	Peak Found	Peak Found	High
+CNAG_04098-t26_1-p1	1	1	69.3	130.7	Peak Found	High	Not Found	Peak Found
+CNAG_06927-t26_1-p1	1	1	86.5	113.5	Not Found	High	High	High
+CNAG_07478-t26_1-p1	1	1	45.9	154.1	Peak Found	Not Found	High	Peak Found
+CNAG_07419-t26_1-p1	1	1	123.7	76.3	Not Found	Peak Found	Peak Found	High
+CNAG_05255-t26_1-p1	1	1	43.7	156.3	High	High	High	Peak Found
+CNAG_04530-t26_1-p1	1	1	48.1	151.9	Peak Found	Peak Found	High	Peak Found
+CNAG_00916-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_02515-t26_1-p1	1	1	117.4	82.6	Not Found	Peak Found	High	High
+CNAG_02342-t26_1-p1	1	1	96.2	103.8	High	Peak Found	Peak Found	Peak Found
+CNAG_05499-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_00299-t26_1-p1	1	1	4.6	195.4	Not Found	Peak Found	High	Peak Found
+CNAG_05141-t26_1-p1	1	1	149.8	50.2	High	Peak Found	Not Found	Peak Found
+CNAG_06824-t26_1-p1	1	1	21.5	178.5	Peak Found	Peak Found	Peak Found	High
+CNAG_06542-t26_1-p1	1	1	50.2	149.8	Not Found	Peak Found	High	Not Found
+CNAG_02788-t26_1-p1	1	1	47	153	Peak Found	High	Not Found	High
+CNAG_00680-t26_2-p1	1	1	63.6	136.4	Peak Found	High	Peak Found	High
+CNAG_03202-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_06102-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_07867-t26_2-p1	1	1		200	Not Found	Not Found	High	Not Found
+CNAG_02790-t26_1-p1	1	1	65.2	134.8	High	Peak Found	High	High
+CNAG_04121-t26_1-p1	1	1	142.1	57.9	Peak Found	High	Peak Found	High
+CNAG_05767-t26_1-p1	1	1	93.8	106.2	High	High	High	High
+CNAG_02555-t26_1-p1	1	1	157.8	42.2	Peak Found	High	Peak Found	Peak Found
+CNAG_00330-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_02194-t26_1-p1	1	1	39.8	160.2	Peak Found	Peak Found	High	High
+CNAG_02760-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_02009-t26_1-p1	1	1	64.6	135.4	Not Found	Peak Found	Peak Found	High
+CNAG_00904-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_00794-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_05683-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_04790-t26_1-p1	1	1	56	144	Not Found	Peak Found	High	High
+CNAG_07373-t26_1-p1	1	1	73	127	High	High	High	High
+CNAG_07686-t26_1-p1	1	1	78.9	121.1	Peak Found	Peak Found	Peak Found	High
+CNAG_02130-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_03434-t26_1-p1	1	1	42.8	157.2	Peak Found	Peak Found	High	Peak Found
+CNAG_01579-t26_1-p1	1	1	126.5	73.5	High	Not Found	Peak Found	Peak Found
+CNAG_04913-t26_1-p1	1	1	63	137	High	High	High	High
+CNAG_01158-t26_1-p1	1	1	17.8	182.2	Not Found	Peak Found	High	Peak Found
+CNAG_04200-t26_1-p1	1	1	59.3	140.7	Not Found	Peak Found	High	High
+CNAG_05558-t26_1-p1	1	1	54.9	145.1	Peak Found	High	High	High
+CNAG_04114-t26_1-p1	1	1	200		Peak Found	High	Not Found	Not Found
+CNAG_03142-t26_1-p1	1	1	86.8	113.2	Peak Found	High	Not Found	Peak Found
+CNAG_02877-t26_1-p1	1	1	72.7	127.3	Peak Found	High	High	High
+CNAG_01961-t26_1-p1	1	1	46.2	153.8	Peak Found	Peak Found	Peak Found	High
+CNAG_02662-t26_1-p1	1	1			Not Found	High	Not Found	Not Found
+CNAG_06156-t26_2-p1	1	1	8.9	191.1	Not Found	Peak Found	Not Found	High
+CNAG_00583-t26_1-p1	1	1		200	Not Found	Not Found	Not Found	High
+CNAG_06150-t26_1-p1	1	1	95.2	104.8	Not Found	High	Peak Found	Peak Found
+CNAG_03175-t26_1-p1	1	1	11.8	188.2	Peak Found	Not Found	Not Found	High
+CNAG_05380-t26_1-p1	1	1			High	Not Found	Not Found	Not Found
+CNAG_01595-t26_1-p1	1	1	103.9	96.1	High	High	High	High
+CNAG_00750-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_02006-t26_1-p1	1	1	112.5	87.5	High	High	High	High
+CNAG_00337-t26_1-p1	1	1	14.8	185.2	Peak Found	Not Found	Not Found	High
+CNAG_03891-t26_1-p1	1	1	116	84	Peak Found	High	Not Found	Peak Found
+CNAG_03817-t26_1-p1	1	1	37.2	162.8	Peak Found	Peak Found	Not Found	High
+CNAG_07551-t26_1-p1	1	1	78.1	121.9	Not Found	High	Peak Found	High
+CNAG_04232-t26_1-p1	1	1	113.3	86.7	Not Found	High	Peak Found	Peak Found
+CNAG_00928-t26_1-p1	1	1	162.2	37.8	High	High	Peak Found	Peak Found
+CNAG_02977-t26_1-p1	1	1	107.9	92.1	High	Peak Found	High	Peak Found
+CNAG_00704-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_06376-t26_1-p1	1	1	200		Not Found	High	Not Found	Not Found
+CNAG_03484-t26_1-p1	1	1	147.6	52.4	Not Found	High	High	High
+CNAG_03864-t26_1-p1	1	1	102.4	97.6	Peak Found	High	High	High
+CNAG_00566-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_05579-t26_1-p1	1	1	88.7	111.3	High	High	High	High
+CNAG_03846-t26_1-p1	1	1	111	89	High	High	High	Not Found
+CNAG_00709-t26_1-p1	1	1	120.6	79.4	High	Peak Found	Peak Found	Not Found
+CNAG_02995-t26_1-p1	1	1	116.8	83.2	Peak Found	High	Peak Found	Peak Found
+CNAG_00661-t26_1-p1	1	1	10.5	189.5	Not Found	Peak Found	Not Found	High
+CNAG_02039-t26_1-p1	1	1	64.6	135.4	High	Peak Found	Peak Found	Peak Found
+CNAG_04453-t26_1-p1	1	1	102.4	97.6	High	Peak Found	Not Found	High
+CNAG_04041-t26_1-p1	1	1	55	145	Peak Found	High	Not Found	High
+CNAG_00246-t26_1-p1	1	1	142.8	57.2	Not Found	High	High	Peak Found
+CNAG_07675-t26_1-p1	1	1	200		High	Not Found	Not Found	Not Found
+CNAG_03217-t26_1-p1	1	1	101.9	98.1	High	High	High	High
+CNAG_02997-t26_1-p1	1	1	120.2	79.8	Peak Found	High	Peak Found	Peak Found
+CNAG_02936-t26_1-p1	1	1	23.8	176.2	Not Found	Peak Found	High	High
+CNAG_01362-t26_1-p1	1	1	13.8	186.2	Peak Found	High	Peak Found	High
+CNAG_02170-t26_1-p1	1	1	104.5	95.5	Not Found	High	High	Not Found
+CNAG_03621-t26_2-p1	1	1	144.8	55.2	Peak Found	High	Peak Found	Not Found
+CNAG_01985-t26_1-p1	1	1	62.2	137.8	Not Found	Peak Found	High	Not Found
+CNAG_00992-t26_1-p1	1	1	32.4	167.6	Peak Found	High	Not Found	High
+CNAG_04693-t26_1-p1	1	1	57.9	142.1	Peak Found	High	Peak Found	High
+CNAG_02163-t26_1-p1	1	1	20.6	179.4	Not Found	Peak Found	Peak Found	High
+CNAG_03456-t26_1-p1	1	1	6.9	193.1	Peak Found	Not Found	High	Peak Found
+CNAG_00740-t26_1-p1	1	1	59.5	140.5	Peak Found	High	High	Not Found
+CNAG_07430-t26_1-p1	1	1	47	153	Peak Found	Peak Found	Peak Found	High
+CNAG_00436-t26_1-p1	1	1	38.2	161.8	Peak Found	High	Peak Found	Not Found
+CNAG_05005-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_07989-t26_1-p1	1	1	122.5	77.5	High	High	High	Peak Found
+CNAG_00506-t26_1-p1	1	1	101.2	98.8	High	Peak Found	High	High
+CNAG_05513-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_01048-t26_1-p1	1	1	54.7	145.3	Peak Found	Peak Found	Peak Found	High
+CNAG_04678-t26_1-p1	1	1	77.2	122.8	Peak Found	Peak Found	Peak Found	High
+CNAG_05043-t26_1-p1	1	1	15.2	184.8	Not Found	Peak Found	High	High
+CNAG_04305-t26_1-p1	1	1	147.3	52.7	Peak Found	High	High	Peak Found
+CNAG_03712-t26_1-p1	1	1		200	Not Found	Not Found	High	High
+CNAG_04243-t26_1-p1	1	1	5.3	194.7	Peak Found	Not Found	Peak Found	High
+CNAG_01156-t26_1-p1	1	1	71.8	128.2	High	Peak Found	High	High
+CNAG_07679-t26_1-p1	1	1	43.9	156.1	Not Found	Peak Found	Peak Found	High
+CNAG_07773-t26_1-p1	1	1	128.3	71.7	High	Peak Found	Not Found	Peak Found
+CNAG_05889-t26_1-p1	1	1	96.9	103.1	High	High	High	High
+CNAG_05797-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_01051-t26_1-p1	1	1	200		High	Peak Found	Not Found	Not Found
+CNAG_05363-t26_1-p1	1	1	90.4	109.6	High	Peak Found	Peak Found	Peak Found
+CNAG_03247-t26_1-p1	1	1	74.9	125.1	High	Peak Found	Peak Found	High
+CNAG_00101-t26_1-p1	1	1	40.7	159.3	Peak Found	High	High	High
+CNAG_01153-t26_1-p1	1	1	111.7	88.3	Peak Found	High	Peak Found	Not Found
+CNAG_05616-t26_1-p1	1	1	17.4	182.6	Not Found	Peak Found	High	Not Found
+CNAG_03386-t26_1-p1	1	1	94.8	105.2	Not Found	Peak Found	Peak Found	High
+CNAG_03902-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_02891-t26_1-p1	1	1	137.8	62.2	Peak Found	High	Peak Found	Not Found
+CNAG_01572-t26_1-p1	1	1	30.9	169.1	Peak Found	Peak Found	Peak Found	High
+CNAG_03408-t26_1-p1	1	1	116.8	83.2	Not Found	High	High	High
+CNAG_06671-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_05665-t26_1-p1	1	1	71.4	128.6	Peak Found	High	High	High
+CNAG_01408-t26_1-p1	1	1	16.3	183.7	Peak Found	Not Found	High	Peak Found
+CNAG_06790-t26_1-p1	1	1	112	88	Peak Found	High	Peak Found	High
+CNAG_07320-t26_1-p1	1	1	67.9	132.1	Not Found	Peak Found	Peak Found	High
+CNAG_03584-t26_1-p1	1	1	82.9	117.1	Not Found	Peak Found	Peak Found	High
+CNAG_07580-t26_1-p1	1	1	107.9	92.1	Not Found	Peak Found	High	Peak Found
+CNAG_04220-t26_1-p1	1	1	63.7	136.3	Peak Found	High	Peak Found	Not Found
+CNAG_02684-t26_1-p1	1	1		200	Not Found	Not Found	High	Not Found
+CNAG_01694-t26_1-p1	1	1	200		High	Not Found	Not Found	Not Found
+CNAG_05386-t26_1-p1	1	1	120.1	79.9	High	Not Found	High	Not Found
+CNAG_06363-t26_1-p1	1	1	153.7	46.3	Not Found	High	Peak Found	Peak Found
+CNAG_06423-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_04377-t26_1-p1	1	1	66.1	133.9	High	Peak Found	High	Peak Found
+CNAG_03135-t26_1-p1	1	1	5.3	194.7	Peak Found	Not Found	Peak Found	High
+CNAG_07982-t26_1-p1	1	1	98.1	101.9	Not Found	Peak Found	Peak Found	High
+CNAG_07552-t26_1-p1	1	1			Not Found	Not Found	Not Found	High
+CNAG_02408-t26_1-p1	1	1	118.7	81.3	Peak Found	Peak Found	High	Not Found
+CNAG_07814-t26_1-p1	1	1			Not Found	Not Found	High	Not Found
+CNAG_02195-t26_1-p1	1	1	106.6	93.4	High	Peak Found	Peak Found	Peak Found
+CNAG_02171-t26_1-p1	1	1	147.4	52.6	Not Found	High	Not Found	Peak Found
+CNAG_02856-t26_1-p1	1	1	70.8	129.2	High	Peak Found	High	High
+CNAG_01157-t26_1-p1	1	1	179.7	20.3	High	High	Peak Found	High
+CNAG_00413-t26_1-p1	1	1	118.4	81.6	High	High	Peak Found	High
+CNAG_05829-t26_1-p1	1	1	47.8	152.2	Not Found	High	Peak Found	Peak Found
+CNAG_04365-t26_1-p1	1	1	7.6	192.4	Peak Found	Not Found	High	Peak Found
+CNAG_00636-t26_1-p1	1	1	41.7	158.3	Peak Found	Peak Found	High	Peak Found
+CNAG_02721-t26_1-p1	1	1	9.6	190.4	Not Found	Peak Found	High	Not Found
+CNAG_04054-t26_1-p1	1	1	122.3	77.7	Peak Found	Peak Found	Peak Found	High
+CNAG_02867-t26_1-p1	1	1		200	Not Found	Not Found	High	Peak Found
+CNAG_04174-t26_1-p1	1	1	98.9	101.1	Not Found	High	Peak Found	Peak Found
+CNAG_03024-t26_1-p1	1	1	148.9	51.1	Peak Found	Peak Found	High	Peak Found
+CNAG_05864-t26_1-p1	1	1	147.3	52.7	High	Not Found	Not Found	Peak Found
+CNAG_03368-t26_1-p1	1	1	92.6	107.4	Peak Found	High	Peak Found	Not Found
+CNAG_03789-t26_1-p1	1	1	99.1	100.9	Not Found	Peak Found	High	High

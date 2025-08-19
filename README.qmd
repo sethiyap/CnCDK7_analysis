@@ -1,0 +1,400 @@
+---
+title: "Cdk7_paper_figure"
+format: html
+editor: visual
+---
+
+### Percent similarity
+
+```{r percent_similar, echo=FALSE, eval=TRUE}
+
+library(magrittr)
+
+percent_dat <- tibble::tribble(
+                 ~org, ~percent_similar_Hs,
+                 "Sc",                67.3,
+                 "Cn",                75.1
+                 )
+
+
+
+percent_dat %>% ggplot2::ggplot(ggplot2::aes(org, percent_similar_Hs, label=percent_similar_Hs))+
+                ggplot2::geom_col()+
+                ggplot2::coord_cartesian(ylim=c(60, 76))+
+                ggplot2::geom_text(vjust=-1)+
+                ggplot2::theme_bw()
+```
+
+### enzyme assay
+
+```{r enzyme_assay, echo=FALSE, eval=FALSE}
+
+dat_enzyme_1 <- tibble::tribble(
+     ~sample, ~`0`,  ~`47`,  ~`131`,   ~`268`,
+      "DMSO",      100L, 80.35794672, 81.18528887, 62.63131296,
+     "Mev-50uM",      100L,  94.5645988, 95.80705844, 97.54990835,
+     "Mev-10uM",      100L,   92.907477, 91.95663725, 90.02508874,
+   "BS-50uM",      100L, 93.03342787, 90.18773307, 84.59772797,
+   "BS-10uM",      100L, 92.15284737,  88.2825586, 70.07810051
+  )
+
+
+
+dat_enzyme_2 <- tibble::tribble(
+     ~sample, ~`0`,       ~`47`,      ~`134`,      ~`272`,
+      "DMSO", 100L, 89.89328483, 68.81164692, 44.36823976,
+  "Mev-50uM", 100L, 101.0776987, 96.54690058, 90.87359802,
+  "Mev-10uM", 100L, 98.38122895, 87.36840241, 77.02756869,
+   "BS-50uM", 100L,  96.0701645, 80.64617696, 70.41294014,
+   "BS-10uM", 100L, 94.27180134, 73.25771618, 52.91851908
+  )
+
+
+purv_dat <- tibble::tribble(
+                  ~sample, ~`0`,      ~`100`,      ~`225`,
+                   "DMSO", 100L,  78.9505485, 47.30576822,
+              "PurA-50uM", 100L, 84.81585758, 61.77580879,
+              "PurA-10uM", 100L, 81.17350236, 55.96325812
+              )
+
+
+set_specific <- purv_dat %>%
+              tidyr::gather(Time, value, -sample) %>%
+              dplyr::mutate(Time=as.numeric(Time), 
+                            sample=forcats::as_factor(sample)) %>%
+              dplyr::filter(stringr::str_detect(sample, 'DMSO|Mev'), Time!=47) 
+
+set_specific %>%
+ggplot2::ggplot(ggplot2::aes(Time, value, color=sample, group=sample))+
+                     ggplot2::geom_line( lwd=1.5)+ ggplot2::theme_bw()+
+  ggplot2::geom_point(color="black")+
+  ggplot2::scale_y_continuous(minor_breaks = seq(40, 100, by=5),
+                              breaks = seq(40,100, by=10), limits = c(40,100),
+                              guide = ggplot2::guide_axis(minor.ticks = TRUE) )+
+ ggplot2::scale_x_continuous(minor_breaks = seq(0, 300, by=50),
+                              breaks = seq(0,300, by=100), limits = c(0,300),
+                              guide = ggplot2::guide_axis(minor.ticks = TRUE)) +
+  ggplot2::labs(
+        y = "Percentage of ATP remaining", x = "Time in minutes")+
+  ggplot2::scale_color_manual(values=c("#8A9045FF", "#FFA319FF", "#155F83FF"))
+
+```
+
+#### 
+
+```{r Pvalue, eval=FALSE, echo=FALSE}
+
+dat_tble_group <- dat_last_time %>%
+                      tidyr::separate(col = sample, into = c("sample", "replicate"), sep = "_") %>%
+                      dplyr::select(-c(replicate)) %>%
+                      tidyr::gather(condition, value, -sample) %>%
+                      dplyr::mutate(condition=forcats::as_factor(condition))
+
+  pval_tibble <- dat_tble_group %>%
+                   # dplyr::mutate(sample=forcats::as_factor(sample)) %>%
+                    dplyr::group_by(sample) %>%
+                    rstatix::t_test(value ~ sample, paired = FALSE, ref.group = control_group) %>%
+                    dplyr::mutate(p=p/2,
+                                  # left tailed: treatment < control, right tailed: treatment > control
+                                  # However, in population of genes if some are control > treatment or control < treatment.
+                                  # then converting the two-tailed pvalue into one-tailed useful (by dividing the two-tailed pvalue into half)
+                                  # as when we don't know the direction of population
+
+                                  pval_significance= dplyr::if_else(p < 0.05 & p > 0.01,"*",
+                                                                    dplyr::if_else(p < 0.01 & p > 0.001, "**", # adding pvalue significance
+                                                                                   dplyr::if_else(p < 0.001 & p > 0.0001, "***",
+                                                                                                  dplyr::if_else(p< 0.0001, "****", "ns"))))) %>%
+
+                    rstatix::adjust_pvalue(method = "fdr") %>%
+                    rstatix::add_significance("p.adj")
+```
+
+#### Enzyme assay pvalue at last time-point
+
+```{r pval_last, echo=FALSE, eval=TRUE}
+
+dat_last_time <- tibble::tribble(
+                        ~sample,      ~assay,
+                       "DMSO_1",           1,
+                    "BS-10uM_1", 1.118898794,
+                   "Mev-10uM_1", 1.437381471,
+                    "BS-50uM_1", 1.350725763,
+                   "Mev-50uM_1",  1.55752616,
+                       "DMSO_2",           1,
+                    "BS-10uM_2", 1.192711709,
+                   "Mev-10uM_2", 1.736097017,
+                    "BS-50uM_2", 1.587012253,
+                   "Mev-50uM_2", 2.048167755
+                   )
+
+
+
+
+#CnPho80Analysis::plot_pvalues(dat_tble = dat_last_time, display_pval = TRUE, control_group = "BS-50uM", y_label = "ATP used normalised to DMSO")
+
+dat_last_time %>% 
+  dplyr::filter(stringr::str_detect(sample, '_2')) %>%
+  dplyr::mutate(sample=forcats::as_factor(sample)) %>%
+  ggplot2::ggplot(ggplot2::aes(sample, assay))+
+  ggplot2::geom_col()+
+  ggplot2::coord_cartesian(ylim=c(0.85, 2.1))+
+  ggplot2::theme_bw()+
+  ggplot2::ylab("ATP usage normalised to DMSO at 4.5hr")
+  
+  
+```
+
+### Dose response curve 2 fold serial dilution (15/10/2024)
+
+Experimental setup
+
+1.  Cells were grown overnight in YPD media
+2.  OD for O/N cells (OD=28.84) was determined and diluted to OD600 = 0.01/ml in 15ml (6.935µl) fresh YPD.
+3.  Cells were aliquoted in 1ml tubes (14x)
+4.  Mev stock (100mg/ml) and BS181 stock (40mg/ml) was serially diluted in DMSO and cells were treated with 1µl of Mev and 2.5µl of BS181 from each dilution and only DMSO (0µg/ml) as control
+5.  Cells were aliquoted in 96-well plate, 200µl/well.
+6.  Cell growth was monitored by recording OD600 every 20min up-to 40hrs with constant shaking at 800rpm at 30C using [Agilent Biotek logphase 600](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.agilent.com/en/product/microplate-instrumentation/microplate-readers/multiplate-absorbance-reader/biotek-logphase-600-microbiology-reader-1623185&ved=2ahUKEwiTyenf3v2IAxWMh1YBHWNKFdMQFnoECBcQAQ&usg=AOvVaw0jzPdCYQNt27zqyw6PwRos) plate reader
+7.  Cell growth is plotted as Time Vs OD600. Concentration is indicated in the brackets as µg/ml.
+
+#### H99
+
+```{r dose_curve_17Oct24, echo=FALSE, eval=TRUE}
+
+dose_curve_data <- readr::read_delim("data_files/dose_response_17Oct24.txt", delim="\t", col_names = TRUE) 
+  
+dosecurve_dt <-  dose_curve_data %>% 
+              dplyr::mutate(Time= stringr::str_replace_all(pattern = ":", replacement = ".", Time), Time=stringi::stri_replace_last_regex(Time, "\\.0[0-9]" , '')) %>% dplyr::mutate(Time=as.double(Time))
+              
+current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^Mev|^Time"))
+
+colr=c("#984EA3", "#377EB8", "#4DAF4A", "#E41A1C", "#FF7F00", "#FFFF33", "#A65628", "#F781BF")
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
+
+```
+
+Conclusions
+
+1.  For Mev, 12.5µg/ml is the inhibitory concentration
+2.  For BS181, 50µg/ml concentration shows complete inhibition
+3.  Dose response assay shows that stark but not gradual inhibition in growth at the described concentration
+
+#### CAK-tag
+
+```{r dose_curve_20Dec24, echo=FALSE, eval=TRUE}
+
+dose_curve_data <- readr::read_delim("data_files/dose_response_Mev_20Dec24_Cdk7Tag.txt", delim="\t", col_names = TRUE) 
+  
+dosecurve_dt <-  dose_curve_data %>% 
+              dplyr::mutate(Time= stringr::str_replace_all(pattern = ":", replacement = ".", Time), Time=stringi::stri_replace_last_regex(Time, "\\.0[0-9]" , '')) %>% dplyr::mutate(Time=as.double(Time))
+
+# KN99          
+current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^KN99|^Time"))
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
+
+# CAK-tag
+
+current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^CM2448|^Time"))
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
+
+```
+
+Conclusions
+
+1.  WT-KN99 and Cdk7 tagged strains have MIC of 12.5µg/ml for Mevociclib
+2.  The MIC values are same as Cn H99
+3.  Together results suggests
+    -   Irrespective of strain (KN99 or H99) C. neoformans have same MIC for Cdk7 inhibitors
+
+    -   Adding tags to the Cdk7-complex does not alter the growth inhibition in presence of Cdk7 inhibitors
+
+### Phospho-proteomics
+
+#### Phospho-proteomics
+
+```{r filter_phosphoData}
+
+phospho_tb <- readr::read_delim("data_files/Phospho_RawData.txt", delim="\t", col_names = TRUE)
+
+phospho_tb <- phospho_tb %>% 
+  dplyr::filter(stringr::str_starts(Accession, "CNAG")) %>%
+  dplyr::rowwise() %>% # remove rows with no abundance reported
+  dplyr::filter(!all(is.na(dplyr::c_across(c(Abundances_With, Abundances_Without)))))
+
+# remove rows having peak "Not found" in both the replicate
+phospho_tb_mev <- phospho_tb %>%
+                  dplyr::select(c(Accession, Sample_With_1,Sample_With_2)) %>%
+                  dplyr::rowwise() %>%
+                  dplyr::filter(sum(dplyr::c_across(2:3) != "Not Found") == 2) %>%
+                  dplyr::ungroup()
+
+phospho_tb_untreated <- phospho_tb %>%
+                  dplyr::select(c(Accession, Sample_Without_1,Sample_Without_2)) %>%
+                  dplyr::rowwise() %>%
+                  dplyr::filter(sum(dplyr::c_across(2:3) != "Not Found") == 2) %>%
+                  dplyr::ungroup()
+
+# create a combined list of mev and untreated
+
+phospho_combined_list <- dplyr::bind_rows(
+                            phospho_tb_untreated %>% dplyr::select(Accession),
+                           phospho_tb_mev %>% dplyr::select(Accession)
+                          ) %>%
+                          dplyr::distinct()
+
+
+phospho_filtered <- phospho_tb %>%
+                  dplyr::filter(Accession %in% phospho_combined_list$Accession) %>%
+                  dplyr::mutate(LFC = log2(Abundances_With/Abundances_Without),
+                                class=dplyr::if_else(LFC>1, "Up",
+                                      dplyr::if_else(LFC< -1, "Down", "No-change"))) %>%
+                  dplyr::mutate(class=dplyr::if_else(is.na(Abundances_Without), "Mev_Only", dplyr::if_else(is.na(Abundances_With), "WT_Only", class)))
+
+Phospho_stats <- phospho_filtered %>% 
+  dplyr::count(class) 
+
+Phospho_stats <- tibble::tribble(
+                        ~class,   ~n,
+                          "Up", 134L,
+                   "No-change", 466L,
+                        "Down", 189L,
+                    "Mev_Only",  40L,
+                     "WT_Only",  14L
+                   )
+
+Phospho_stats %>% 
+  dplyr::mutate(class=forcats::as_factor(class)) %>%
+            ggplot2::ggplot(ggplot2::aes(class, n, label=n, fill=class))+
+            ggplot2::geom_col(alpha=0.8, color="black") +
+            ggplot2::theme_bw()+
+            ggplot2::geom_text(vjust=-1)+
+            ggplot2::scale_fill_manual(values=c("red", "gray", "blue", "salmon", "cyan4"))
+
+# combine WT_only to Down and Mev_Only to Up
+
+Phospho_stats_2 <- phospho_filtered %>% 
+                  dplyr::mutate(class2=dplyr::if_else(class=="WT_Only", "Down", dplyr::if_else(class=="Mev_Only", "Up", class))) %>% dplyr::count(class2)
+
+Phospho_stats_2 %>% dplyr::ungroup() %>% 
+            dplyr::arrange(desc(class2)) %>% 
+            dplyr::mutate(class2=forcats::as_factor(class2)) %>%
+            ggplot2::ggplot(ggplot2::aes(class2, n, label=n, fill=class2))+
+            ggplot2::geom_col(alpha=0.8, color="black") +
+            ggplot2::theme_bw()+
+            ggplot2::geom_text(vjust=-1)+
+            ggplot2::scale_fill_manual(values=c("red", "gray", "blue"))
+
+```
+
+#### LCMS
+
+```{r filter_lcms}
+
+lcms_dat = readr::read_delim("data_files/LCMS_RawData.txt", delim="\t")
+
+# filter-out rows having "Not found" in atleast 2 of the three replicates
+
+lcms_dat_Mev <- lcms_dat %>%
+                  dplyr::select(c(Accession, Sample_With_1,Sample_With_2,Sample_With_3)) %>%
+                  dplyr::rowwise() %>%
+                  dplyr::filter(sum(dplyr::c_across(2:4) != "Not Found") >= 2) %>%
+                  dplyr::ungroup()
+
+lcms_dat_WT <- lcms_dat %>%
+  dplyr::select(c(Accession, Sample_Without_1,Sample_Without_2,Sample_Without_3)) %>%
+  dplyr::rowwise() %>%
+  dplyr::filter(sum(dplyr::c_across(2:4) != "Not Found") >= 2) %>%
+  dplyr::ungroup()
+
+combined_genelist <-  dplyr::bind_rows(
+                            lcms_dat_WT %>% dplyr::select(Accession),
+                            lcms_dat_Mev %>% dplyr::select(Accession)
+                          ) %>%
+                            dplyr::distinct()
+lcms_filtered <- lcms_dat %>%
+                  dplyr::filter(Accession %in% combined_genelist$Accession) %>%
+                  dplyr::rowwise() %>%
+                  dplyr::filter(!any(is.na(dplyr::c_across(c(Abundances_With, Abundances_Without))))) %>%
+                  dplyr::filter(stringr::str_starts(Accession, "CNAG")) %>%
+                  dplyr::mutate(LFC = log2(Abundances_With/Abundances_Without),
+                                class=dplyr::if_else(LFC>1, "Up",
+                                                     dplyr::if_else(LFC< -1, "Down", "No-change")))
+
+
+LCMS_stats <- lcms_filtered %>% 
+                    dplyr::count(class) %>%
+                    dplyr::ungroup() %>% 
+                    dplyr::arrange(desc(class)) %>% 
+                    dplyr::mutate(class=forcats::as_factor(class))
+
+LCMS_stats %>% ggplot2::ggplot(ggplot2::aes(class, n, label=n, fill=class))+
+            ggplot2::geom_col(alpha=0.8, color="black") +
+            ggplot2::theme_bw()+
+            ggplot2::geom_text(vjust=-1)+
+            ggplot2::scale_fill_manual(values=c("red", "gray", "blue"))
+
+
+```
+
+#### Compare LCMS and Phospho-proteomics
+
+```{r lcms_phos_venn}
+dat_venn1 <- readr::read_delim("data_files/LCSM_Phosph_VennInput.txt", delim="\t", col_names =TRUE)
+
+
+gg_1 = as.list(dat_venn1)
+
+v1 = lapply(gg_1,unique)
+
+
+clean_list <- lapply(v1, function(x) x[!is.na(x)])
+
+
+lengths(clean_list)
+
+names(clean_list)=factor(names(clean_list))
+upset_venn1 <- UpSetR::upset(UpSetR::fromList(clean_list), 
+          nsets = ncol(dat_venn),
+          #order.by = c("degree"),
+          keep.order=TRUE,sets=names(clean_list),
+          sets.bar.color = c( "grey","blue", "red", "red"),
+          text.scale=2, sets.x.label = "No. of genes")
+
+print(upset_venn1)
+
+# Convert matrix to tidy format
+UpSetR::fromList(clean_list) %>%
+        dplyr::mutate(gene = rownames(.)) %>%
+        tidyr::pivot_longer(-gene, names_to = "set", values_to = "present") %>%
+  dplyr::filter(present == 1) %>%
+  dplyr::group_by(gene) %>%
+  dplyr::summarise(sets = paste(sort(set), collapse = ",")) -> gene_intersections
+
+# See genes per intersection
+table(gene_intersections$sets)
+```
+
+#### Growth in liquid culture
+
+```{r growth_in_tube}
+growth_tube_dt <- tibble::tribble(
+                    ~Time,       ~DMSO,     ~SY1365,
+                     "1h", 140.7514451, 130.0578035,
+                     "2h", 183.1213873, 153.0057803,
+                     "3h", 228.9017341, 176.2427746,
+                     "4h", 279.2196532,  211.734104,
+                     "5h", 357.8034682, 243.3526012,
+                    )
+
+growth_tube_dt %>% 
+  tidyr::gather(Sample, Percentage, -Time) %>%
+  dplyr::mutate(Sample=forcats::as_factor(Sample)) %>%
+  ggplot2::ggplot(ggplot2::aes(Time, Percentage, fill=Sample))+
+  ggplot2::geom_col(color="black")+
+  ggplot2::theme_bw()+
+  ggplot2::facet_wrap(~Sample, scales="fixed")+
+  ggplot2::scale_fill_manual(values=c("grey", "darkgreen","darkblue"))
+
+```
