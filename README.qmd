@@ -36,4 +36,4 @@ percent_dat %>% ggplot2::ggplot(ggplot2::aes(org, percent_similar_Hs, label=perc
 
 ### Functional insights into CnCDK7 using CDK7 inhibitors
 
-1.  SY-1365
+1.  [SY-1365](https://github.com/sethiyap/CnCDK7_analysis/blob/main/Paper_SY-1365.md)
