@@ -8,6 +8,8 @@
 
 ![](Paper_SY-1365_files/figure-commonmark/pval_last-1.png)
 
+## Growth Curves
+
 ### Dose response curve 2 fold serial dilution
 
 Experimental setup
@@ -55,6 +57,94 @@ Conclusions
 
     - Adding tags to the Cdk7-complex does not alter the growth
       inhibition in presence of Cdk7 inhibitors
+
+### Growth in liquid culture
+
+#### For RNAseq, Western and Proteomics
+
+With starting OD=4/mL and 60µg/mL SY-1365 treatment
+
+``` r
+growth_tube_dt <- tibble::tribble(
+                    ~Time,       ~DMSO,     ~SY1365,
+                     "1h", 140.7514451, 130.0578035,
+                     "2h", 183.1213873, 153.0057803,
+                     "3h", 228.9017341, 176.2427746,
+                     "4h", 279.2196532,  211.734104,
+                     "5h", 357.8034682, 243.3526012,
+                    )
+
+growth_tube_dt %>% 
+  tidyr::gather(Sample, Percentage, -Time) %>%
+  dplyr::mutate(Sample=forcats::as_factor(Sample)) %>%
+  ggplot2::ggplot(ggplot2::aes(Time, Percentage, fill=Sample))+
+  ggplot2::geom_col(color="black")+
+  ggplot2::theme_bw()+
+  ggplot2::facet_wrap(~Sample, scales="fixed")+
+  ggplot2::scale_fill_manual(values=c("grey", "darkgreen","darkblue"))
+```
+
+![](Paper_SY-1365_files/figure-commonmark/growth_in_tube-1.png)
+
+#### For flow cytometry
+
+``` r
+dat_growth_curve  <- tibble::tribble(
+                 ~Time, ~DMSO_1, ~DMSO_2, ~Mev_1, ~Mev_2,
+                     0,   4.766,    4.73,  4.678,  4.676,
+                   0.5,   6.416,   6.328,  5.868,  6.472,
+                     1,   7.268,   7.052,  6.676,   6.44,
+                     3,   15.27,   15.11, 10.455, 10.495,
+                     5,   26.62,   26.61,  17.88,  17.58,
+                    22,   42.46,    41.5,   41.7,  45.52
+                 )
+
+
+
+
+dat_growth_curve 
+```
+
+    # A tibble: 6 × 5
+       Time DMSO_1 DMSO_2 Mev_1 Mev_2
+      <dbl>  <dbl>  <dbl> <dbl> <dbl>
+    1   0     4.77   4.73  4.68  4.68
+    2   0.5   6.42   6.33  5.87  6.47
+    3   1     7.27   7.05  6.68  6.44
+    4   3    15.3   15.1  10.5  10.5 
+    5   5    26.6   26.6  17.9  17.6 
+    6  22    42.5   41.5  41.7  45.5 
+
+``` r
+column1 <- dat_growth_curve %>% colnames() %>% .[1]
+
+dat_growth_curve <- dat_growth_curve %>% dplyr::rename(Time= column1)
+
+
+dat_melt <- dat_growth_curve %>%
+                  tidyr::gather(key="sample", value="OD", -Time) %>%
+                  tidyr::separate(col = sample,into = c("condition","replicate"),sep="_")
+
+
+summ_dat <- dat_melt %>%
+            dplyr::mutate(condition=forcats::as_factor(condition),Time=forcats::as_factor(Time)) %>%
+            dplyr::group_by(.dots = c("Time", "condition"))  %>%
+            dplyr::mutate(sd = sd(OD), mean=mean(OD)) %>%
+            dplyr::filter(replicate==min(replicate)) %>%
+            dplyr::select(-c(replicate)) 
+
+
+ggplot2::ggplot(summ_dat, ggplot2::aes(x = Time, y = mean, fill = condition, group=condition)) +
+              ggplot2::geom_col(position=ggplot2::position_dodge(width = 0.8), width = 0.7) +
+  ggplot2::geom_errorbar(ggplot2::aes(ymin = mean - sd, ymax = mean + sd), 
+                position = ggplot2::position_dodge(width = 0.8),
+    width = 0.2, linewidth = 0.6) +
+    ggplot2::ylab("mean(OD600)") +
+    ggplot2::scale_fill_manual(values=c("blue4","red4"))+
+    ggplot2::theme_bw()
+```
+
+![](Paper_SY-1365_files/figure-commonmark/growth_OD3-1.png)
 
 ### Phospho-proteomics
 
@@ -244,26 +334,4 @@ table(gene_intersections$sets)
                           Up_Pho 
                               88 
 
-#### Growth in liquid culture
-
-``` r
-growth_tube_dt <- tibble::tribble(
-                    ~Time,       ~DMSO,     ~SY1365,
-                     "1h", 140.7514451, 130.0578035,
-                     "2h", 183.1213873, 153.0057803,
-                     "3h", 228.9017341, 176.2427746,
-                     "4h", 279.2196532,  211.734104,
-                     "5h", 357.8034682, 243.3526012,
-                    )
-
-growth_tube_dt %>% 
-  tidyr::gather(Sample, Percentage, -Time) %>%
-  dplyr::mutate(Sample=forcats::as_factor(Sample)) %>%
-  ggplot2::ggplot(ggplot2::aes(Time, Percentage, fill=Sample))+
-  ggplot2::geom_col(color="black")+
-  ggplot2::theme_bw()+
-  ggplot2::facet_wrap(~Sample, scales="fixed")+
-  ggplot2::scale_fill_manual(values=c("grey", "darkgreen","darkblue"))
-```
-
-![](Paper_SY-1365_files/figure-commonmark/growth_in_tube-1.png)
+#### 
