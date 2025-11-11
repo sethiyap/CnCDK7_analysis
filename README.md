@@ -1,5 +1,4 @@
-# Functional insight into CDK7 in fungal pathogen Cryptococcus
-neoformans
+# Functional insight into CDK7 in Cryptococcus neoformans
 
 This study uncovers the role of the cyclin-dependent kinase **CDK7** in
 the fungal pathogen *Cryptococcus neoformans*. Using genetic tagging,
@@ -128,7 +127,7 @@ parcutils::get_pca_plot(x = res, label_replicates = TRUE)
 
 ![](README_files/figure-commonmark/pca-1.png)
 
-## **Functional insights into CnCDK7 using CDK7 inhibitors**
+## **Functional insights into CnCDK7 using CDK7 inhibitors: SY-1365 & BS-181**
 
 The following section highlights functional insights into the role of
 CDK7 in *Cryptococcus neoformans* (Cn) using CDK7 inhibitors as
@@ -138,4 +137,4 @@ fungal pathogen, employing two human CDK7 inhibitors with demonstrated
 antifungal potential.
 
 1.  [SY-1365](https://github.com/sethiyap/CnCDK7_analysis/blob/main/Paper_SY-1365.md)
-2.  BS-181
+2.  [BS-181](https://github.com/sethiyap/CnCDK7_analysis/blob/main/Paper_BS181.md)

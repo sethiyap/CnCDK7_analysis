@@ -1,5 +1,5 @@
 ---
-title: "Functional insight into CDK7 in Cryptococcus neoformans "
+title: "Functional insight into CDK7 in Cryptococcus neoformans"
 smooth-scroll: true
 format: gfm
 editor:
@@ -151,4 +151,4 @@ fungal pathogen, employing two human CDK7 inhibitors with demonstrated
 antifungal potential.
 
 1.  [SY-1365](https://github.com/sethiyap/CnCDK7_analysis/blob/main/Paper_SY-1365.md)
-2.  BS-181
+2.  [BS-181](https://github.com/sethiyap/CnCDK7_analysis/blob/main/Paper_BS181.md)
