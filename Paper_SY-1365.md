@@ -1,6 +1,6 @@
-# SY-1365 Analysis
+# SY-1365
 
-### enzyme assay
+### Enzyme assay
 
 #### 
 

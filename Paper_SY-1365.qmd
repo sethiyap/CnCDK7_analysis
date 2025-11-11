@@ -93,11 +93,12 @@ dat_tble_group <- dat_last_time %>%
                     rstatix::add_significance("p.adj")
 ```
 
-#### Enzyme assay pvalue at last time-point
+#### 
 
-```{r pval_last, echo=FALSE, eval=TRUE}
+```{r pval_last, echo=FALSE, eval=FALSE}
 
 library(magrittr)
+# Enzyme assay pvalue at last time-point
 
 dat_last_time <- tibble::tribble(
                         ~sample,      ~assay,

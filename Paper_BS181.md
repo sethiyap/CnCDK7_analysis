@@ -1,23 +1,4 @@
----
-title: "BS-181"
-smooth-scroll: true
-format: gfm
-editor:
-  markdown:
-    wrap: 72
-    references: 
-      location: block
-    canonical: true
-execute:
-  echo: true
-  warning: false
----
-
-```{r setup, include=FALSE}
-
-knitr::opts_chunk$set(echo = TRUE, message=FALSE, eval=TRUE, warning = FALSE)
-
-```
+# BS-181
 
 ### Dose response growth curve
 
@@ -41,8 +22,7 @@ Experimental setup
 
 #### *CnH99*
 
-```{r dose_curve_17Oct24_bs}
-
+``` r
 library(magrittr)
 
 dose_curve_data <- readr::read_delim("data_files/dose_response_17Oct24.txt", delim="\t", col_names = TRUE) 
@@ -62,13 +42,13 @@ current_plot <- current_plot %>%
 colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/dose_curve_17Oct24_bs-1.png)
 
 #### *CnKN99 and CnCAK-tag*
 
-```{r dose_curve_20Dec24_bs}
-
+``` r
 dose_curve_data <- readr::read_delim("data_files/dose_response_BS181_20Dec24_Cdk7Tag.txt", delim="\t", col_names = TRUE) 
   
 dosecurve_dt <-  dose_curve_data %>% 
@@ -82,7 +62,11 @@ current_plot <- current_plot %>%
   dplyr::select(!dplyr::matches(paste(exclude_patts, collapse = "|")))
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
+```
 
+![](Paper_BS181_files/figure-commonmark/dose_curve_20Dec24_bs-1.png)
+
+``` r
 #CAK-tag           
    
 current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^CM2448|^Time"))
@@ -93,13 +77,13 @@ current_plot <- current_plot %>%
   dplyr::select(!dplyr::matches(paste(exclude_patts, collapse = "|")))
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/dose_curve_20Dec24_bs-2.png)
 
 #### *Cgatti*
 
-```{r dose_curve_9Sep25}
-
+``` r
 library(magrittr)
 
 dose_curve_data <- readr::read_delim("data_files/BS181_dose_growthcurve_9Sep25.txt", delim="\t", col_names = TRUE) 
@@ -115,13 +99,13 @@ current_plot <- dosecurve_dt %>%
 colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/dose_curve_9Sep25-1.png)
 
 #### *Scerevisiae*
 
-```{r dose_curve_Sc}
-
+``` r
 current_plot <- dosecurve_dt %>% 
   dplyr::select(tidyr::matches("^Sc|^Time")) %>%
   dplyr::select(-dplyr::matches("\\((3.125|1.56|6.25|12.5)\\)"))
@@ -129,25 +113,25 @@ current_plot <- dosecurve_dt %>%
 colr=c( "blue4", "#E41A1C", "#FF7F00","#F781BF")
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/dose_curve_Sc-1.png)
 
 #### *Calbicans*
 
-```{r dose_curve_Ca}
-
+``` r
 current_plot <- dosecurve_dt %>% 
   dplyr::select(tidyr::matches("^Ca|^Time")) %>%
   dplyr::select(-dplyr::matches("\\((3.125|1.56|6.25|12.5)\\)"))
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/dose_curve_Ca-1.png)
 
 #### For flow cytometry
 
-```{r growth_OD3}
-
+``` r
 dat_growth_curve  <- tibble::tribble(
                        ~Time, ~DMSO_1, ~DMSO_2, ~BS181_1, ~BS181_2,
                            0,   4.766,    4.73,    4.482,    4.704,
@@ -183,16 +167,15 @@ ggplot2::ggplot(summ_dat, ggplot2::aes(x = Time, y = mean, fill = condition, gro
     ggplot2::ylab("mean(OD600)") + ggplot2::xlab("Time(in hr)") +
     ggplot2::scale_fill_manual(values=c("blue4","red4"))+
     ggplot2::theme_bw()
-  
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/growth_OD3-1.png)
 
 ### RNASeq analysis
 
 #### DESeq for differential gene expression and normalized count matrix
 
-```{r DESeq, message=FALSE, warning=FALSE}
-
+``` r
 library(magrittr)
 
 cc <- readr::read_delim( "/Users/pooja/Documents/CDK7_project/RNASeq/RNASe1_1h_Mev_BS181/Mev_BS181_1h_read_count.txt", delim="\t", col_names = TRUE) %>% 
@@ -204,7 +187,18 @@ sample_info <- cc %>% colnames() %>% .[-1]  %>%
 
 
 knitr::kable(sample_info)
+```
 
+| samples         | groups      |
+|:----------------|:------------|
+| WT_1h_BScntrl_1 | WT_DMSO     |
+| WT_1h_BScntrl_2 | WT_DMSO     |
+| WT_1h_BScntrl_3 | WT_DMSO     |
+| WT_BS181_1h_1   | WT_BS181_1h |
+| WT_BS181_1h_2   | WT_BS181_1h |
+| WT_BS181_1h_3   | WT_BS181_1h |
+
+``` r
 control=c("WT_DMSO")
 treatment = c("WT_BS181_1h")
 
@@ -225,8 +219,7 @@ BS181_1h_expressed_genes <- deseq_BS181_1h_output$WT_BS181_1h_VS_WT_DMSO$gene_id
 
 #### Normalized count matrix
 
-```{r norm_mat}
-
+``` r
 norm_mat <- parcutils::get_normalised_expression_matrix(x = res, 
                                             samples = NULL,
                                             genes = NULL,
@@ -238,8 +231,7 @@ norm_mat <- parcutils::get_normalised_expression_matrix(x = res,
 
 #### **Molecular Functions**
 
-```{r GSEA_GO}
-
+``` r
 # Load the necessary libraries
 
 library(org.CneoformansH99v64.eg.db)  
@@ -264,13 +256,13 @@ gsea_results_GO <- clusterProfiler::gseGO(
 
 # View and plot results
 clusterProfiler::dotplot(gsea_results_GO, showCategory = 10, split=".sign", x="GeneRatio") + ggplot2::facet_grid(.~.sign)
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/GSEA_GO-1.png)
 
 #### Biological processes
 
-```{r plot_GSEA_GO}
-
+``` r
 plot_GSEA_GO <- tibble::tribble(
                                                            ~Description,     ~pvalue, ~percentage,     ~class,
                                                      "response to heat",     1.4e-08,         49L, "activate",
@@ -293,10 +285,11 @@ plot_GSEA_GO %>% dplyr::mutate(Description=forcats::as_factor(Description)) %>%
       ggplot2::theme_bw()
 ```
 
+![](Paper_BS181_files/figure-commonmark/plot_GSEA_GO-1.png)
+
 #### GSEA-KEGG pathway
 
-```{r GSEA_pathway}
-
+``` r
 # Run GSEA
 gsea_results_KEGG <- clusterProfiler::gseKEGG(
   geneList = ranked_genes,
@@ -320,5 +313,6 @@ gsea_KEGG_plot %>%
       ggplot2::geom_point(shape=21)+
       ggplot2::scale_fill_gradient(high = "#fdcc8a", low="#ae017e")+
       ggplot2::theme_bw()
-
 ```
+
+![](Paper_BS181_files/figure-commonmark/GSEA_pathway-1.png)
