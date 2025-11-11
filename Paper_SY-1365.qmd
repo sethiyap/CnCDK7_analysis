@@ -1,5 +1,5 @@
 ---
-title: "SY-1365 Analysis"
+title: "SY-1365"
 smooth-scroll: true
 format: gfm
 editor:
@@ -13,7 +13,7 @@ execute:
   warning: false
 ---
 
-### enzyme assay
+### Enzyme assay
 
 ```{r enzyme_assay, echo=FALSE, eval=FALSE}
 
@@ -234,7 +234,7 @@ growth_tube_dt %>%
 
 ```
 
-#### For flow cytometry 
+#### For flow cytometry
 
 ```{r growth_OD3, message=FALSE, eval=TRUE}
 

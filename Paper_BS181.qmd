@@ -1,0 +1,324 @@
+---
+title: "BS181"
+smooth-scroll: true
+format: gfm
+editor:
+  markdown:
+    wrap: 72
+    references: 
+      location: block
+    canonical: true
+execute:
+  echo: true
+  warning: false
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE, message=FALSE, eval=TRUE, warning = FALSE)
+
+```
+
+### Dose response growth curve
+
+Experimental setup
+
+1.  Cn, Cg, Sc and Ca cells were grown overnight in 5ml YPD media
+2.  OD for O/N cells was determined and diluted to OD600 = 0.01/ml in
+    9ml fresh YPD.
+3.  Cells were aliquoted in 1ml tubes (8x)
+4.  BS181 stock (40mg/ml) was serially diluted in DMSO and cells were
+    treated with 2.5µl of BS181 from each dilution and only DMSO
+    (0µg/ml) as control
+5.  Cells were aliquoted in 96-well plate, 200µl/well.
+6.  Cell growth was monitored by recording OD600 every 20min up-to 28hrs
+    with constant shaking at 800rpm at 30C using [Agilent Biotek
+    logphase
+    600](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.agilent.com/en/product/microplate-instrumentation/microplate-readers/multiplate-absorbance-reader/biotek-logphase-600-microbiology-reader-1623185&ved=2ahUKEwiTyenf3v2IAxWMh1YBHWNKFdMQFnoECBcQAQ&usg=AOvVaw0jzPdCYQNt27zqyw6PwRos)
+    plate reader
+7.  Cell growth is plotted as Time Vs OD600. Concentration is indicated
+    in the brackets as µg/ml.
+
+#### *CnH99*
+
+```{r dose_curve_17Oct24_bs}
+
+library(magrittr)
+
+dose_curve_data <- readr::read_delim("data_files/dose_response_17Oct24.txt", delim="\t", col_names = TRUE) 
+  
+dosecurve_dt <-  dose_curve_data %>% 
+              dplyr::mutate(Time= stringr::str_replace_all(pattern = ":", replacement = ".", Time), Time=stringi::stri_replace_last_regex(Time, "\\.0[0-9]" , '')) %>% dplyr::mutate(Time=as.double(Time))
+              
+current_plot <- dosecurve_dt %>% 
+  dplyr::select(tidyr::matches("^BS181|^Time"))
+
+
+exclude_patts <- c("^BS181\\(1\\.56\\)", "^BS181\\(3\\.125\\)")
+
+current_plot <- current_plot %>%
+  dplyr::select(!dplyr::matches(paste(exclude_patts, collapse = "|")))
+
+colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
+
+```
+
+#### *CnKN99 and CnCAK-tag*
+
+```{r dose_curve_20Dec24_bs}
+
+dose_curve_data <- readr::read_delim("data_files/dose_response_BS181_20Dec24_Cdk7Tag.txt", delim="\t", col_names = TRUE) 
+  
+dosecurve_dt <-  dose_curve_data %>% 
+              dplyr::mutate(Time= stringr::str_replace_all(pattern = ":", replacement = ".", Time), Time=stringi::stri_replace_last_regex(Time, "\\.0[0-9]" , '')) %>% dplyr::mutate(Time=as.double(Time))
+
+current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^KN99|^Time"))
+
+exclude_patts <- c("^KN99\\(1\\.56\\)", "^KN99\\(3\\.125\\)")
+
+current_plot <- current_plot %>%
+  dplyr::select(!dplyr::matches(paste(exclude_patts, collapse = "|")))
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
+
+#CAK-tag           
+   
+current_plot <- dosecurve_dt %>% dplyr::select(tidyr::matches("^CM2448|^Time"))
+
+exclude_patts <- c("^CM2448\\(1\\.56\\)", "^CM2448\\(3\\.125\\)")
+
+current_plot <- current_plot %>%
+  dplyr::select(!dplyr::matches(paste(exclude_patts, collapse = "|")))
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
+
+```
+
+#### *Cgatti*
+
+```{r dose_curve_9Sep25}
+
+library(magrittr)
+
+dose_curve_data <- readr::read_delim("data_files/BS181_dose_growthcurve_9Sep25.txt", delim="\t", col_names = TRUE) 
+  
+dosecurve_dt <-  dose_curve_data %>% 
+              dplyr::mutate(Time= stringr::str_replace_all(pattern = ":", replacement = ".", Time), Time=stringi::stri_replace_last_regex(Time, "\\.0[0-9]" , '')) %>% 
+  dplyr::mutate(Time=as.double(Time))
+              
+current_plot <- dosecurve_dt %>% 
+  dplyr::select(tidyr::matches("^H99|^Time")) %>%
+  dplyr::select(-dplyr::matches("\\((3.125|1.56)\\)"))
+
+colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
+
+```
+
+#### *Scerevisiae*
+
+```{r dose_curve_Sc}
+
+current_plot <- dosecurve_dt %>% 
+  dplyr::select(tidyr::matches("^Sc|^Time")) %>%
+  dplyr::select(-dplyr::matches("\\((3.125|1.56|6.25|12.5)\\)"))
+
+colr=c( "blue4", "#E41A1C", "#FF7F00","#F781BF")
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
+
+```
+
+#### *Calbicans*
+
+```{r dose_curve_Ca}
+
+current_plot <- dosecurve_dt %>% 
+  dplyr::select(tidyr::matches("^Ca|^Time")) %>%
+  dplyr::select(-dplyr::matches("\\((3.125|1.56|6.25|12.5)\\)"))
+
+growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
+
+```
+
+#### For flow cytometry
+
+```{r growth_OD3}
+
+dat_growth_curve  <- tibble::tribble(
+                       ~Time, ~DMSO_1, ~DMSO_2, ~BS181_1, ~BS181_2,
+                           0,   4.766,    4.73,    4.482,    4.704,
+                           1,   7.268,   7.052,    6.132,    6.308,
+                           3,   15.27,   15.11,     8.64,     9.32,
+                           5,   26.62,   26.61,    13.28,    14.97,
+                          22,   42.46,    41.5,    48.34,    46.64
+                       )
+
+column1 <- dat_growth_curve %>% colnames() %>% .[1]
+
+dat_growth_curve <- dat_growth_curve %>% dplyr::rename(Time= column1)
+
+
+dat_melt <- dat_growth_curve %>%
+                  tidyr::gather(key="sample", value="OD", -Time) %>%
+                  tidyr::separate(col = sample,into = c("condition","replicate"),sep="_")
+
+
+summ_dat <- dat_melt %>%
+            dplyr::mutate(condition=forcats::as_factor(condition),Time=forcats::as_factor(Time)) %>%
+            dplyr::group_by(.dots = c("Time", "condition"))  %>%
+            dplyr::mutate(sd = sd(OD), mean=mean(OD)) %>%
+            dplyr::filter(replicate==min(replicate)) %>%
+            dplyr::select(-c(replicate)) 
+
+
+ggplot2::ggplot(summ_dat, ggplot2::aes(x = Time, y = mean, fill = condition, group=condition)) +
+              ggplot2::geom_col(position=ggplot2::position_dodge(width = 0.8),,alpha=0.8, color="black", width = 0.7) +
+  ggplot2::geom_errorbar(ggplot2::aes(ymin = mean - sd, ymax = mean + sd), 
+                position = ggplot2::position_dodge(width = 0.8),
+    width = 0.2, linewidth = 0.6) +
+    ggplot2::ylab("mean(OD600)") + ggplot2::xlab("Time(in hr)") +
+    ggplot2::scale_fill_manual(values=c("blue4","red4"))+
+    ggplot2::theme_bw()
+  
+
+```
+
+### RNASeq analysis
+
+#### DESeq for differential gene expression and normalized count matrix
+
+```{r DESeq, message=FALSE, warning=FALSE}
+
+library(magrittr)
+
+cc <- readr::read_delim( "/Users/pooja/Documents/CDK7_project/RNASeq/RNASe1_1h_Mev_BS181/Mev_BS181_1h_read_count.txt", delim="\t", col_names = TRUE) %>% 
+  dplyr::select(
+    gene_name,dplyr::matches("^WT_1h_BScntrl|^WT_BS"))
+
+sample_info <- cc %>% colnames() %>% .[-1]  %>%
+              tibble::tibble(samples = . , groups = rep(c( "WT_DMSO", "WT_BS181_1h") , each = 3)) 
+
+
+knitr::kable(sample_info)
+
+control=c("WT_DMSO")
+treatment = c("WT_BS181_1h")
+
+res <- parcutils::run_deseq_analysis(counts = cc ,
+                         sample_info = sample_info,
+                         column_geneid = "gene_name" ,
+                         cutoff_lfc = 1,
+                         cutoff_pval = 0.05,
+                         min_counts = 10,
+                         group_numerator = treatment,
+                         group_denominator = control,
+                         regul_based_upon = 1)
+
+deseq_BS181_1h_output <- res$dsr_tibble_deg[1]%>% tibble::as_tibble()
+
+BS181_1h_expressed_genes <- deseq_BS181_1h_output$WT_BS181_1h_VS_WT_DMSO$gene_id
+```
+
+#### Normalized count matrix
+
+```{r norm_mat}
+
+norm_mat <- parcutils::get_normalised_expression_matrix(x = res, 
+                                            samples = NULL,
+                                            genes = NULL,
+                                            summarise_replicates = FALSE, 
+                                            )
+```
+
+### GSEA-GO
+
+#### **Molecular Functions**
+
+```{r GSEA_GO}
+
+# Load the necessary libraries
+
+library(org.CneoformansH99v64.eg.db)  
+
+BS181_significant_genes <- readr::read_delim("data_files/BS181_GSEA_input.txt", delim="\t", col_names = TRUE) 
+
+# Load RNASeq data and rank by log2 fold change
+ranked_genes <- BS181_significant_genes[[2]]
+names(ranked_genes) <- BS181_significant_genes$gene_id
+ranked_genes <- sort(ranked_genes, decreasing = TRUE)
+
+# Run GSEA
+gsea_results_GO <- clusterProfiler::gseGO(
+  geneList = ranked_genes,
+  OrgDb = org.CneoformansH99v64.eg.db,  
+  ont = "MF",
+ nPermSimple = 100000,
+  keyType = "GID", # Biological Process
+  pvalueCutoff = 0.05, 
+ eps=0
+)
+
+# View and plot results
+clusterProfiler::dotplot(gsea_results_GO, showCategory = 10, split=".sign", x="GeneRatio") + ggplot2::facet_grid(.~.sign)
+
+```
+
+#### Biological processes
+
+```{r plot_GSEA_GO}
+
+plot_GSEA_GO <- tibble::tribble(
+                                                           ~Description,     ~pvalue, ~percentage,     ~class,
+                                                     "response to heat",     1.4e-08,         49L, "activate",
+                                 "respiratory electron transport chain",    1.01e-06,         42L, "activate",
+                                            "oxidative phosphorylation",    2.34e-07,         42L, "activate",
+                                                          "translation",       6e-20,         79L, "suppress",
+                                                      "gene expression",    1.41e-09,         58L, "suppress",
+                                                  "ribosome biogenesis",    3.31e-09,         91L, "suppress",
+                                      "amino acid biosynthetic process",    5.47e-05,         83L, "suppress"
+                  )
+
+ 
+
+plot_GSEA_GO %>% dplyr::mutate(Description=forcats::as_factor(Description)) %>%
+      ggplot2::ggplot(ggplot2::aes(class, Description, fill=pvalue, size=percentage))+
+      ggplot2::geom_point(shape=21)+
+      #ggplot2::facet_wrap(~class,scales="free_y", ncol=1)+
+      ggplot2::scale_fill_gradient(high = "#fdcc8a", low="#b30000")+
+      ggplot2::scale_size_continuous(range = c(4.5, 8)) +  
+      ggplot2::theme_bw()
+```
+
+#### GSEA-KEGG pathway
+
+```{r GSEA_pathway}
+
+# Run GSEA
+gsea_results_KEGG <- clusterProfiler::gseKEGG(
+  geneList = ranked_genes,
+  organism = "cng",
+  keyType = "kegg",
+  nPermSimple=100000,
+  pvalueCutoff = 0.05
+)
+
+gsea_KEGG_plot <- tibble::tribble(
+                                                  ~Description,     ~pvalue, ~Percentage,       ~class,
+                                                    "Ribosome",       1e-10,           92L, "suppressed",
+                                                 "Spliceosome",    5.36e-05,           91L, "suppressed",
+                                 "Biosynthesis of amino acids",    3.91e-05,           81L, "suppressed",
+                    "Pentose and glucuronate interconversions", 0.001211112,           27L,   "activate"
+                    )
+
+gsea_KEGG_plot %>% 
+  dplyr::mutate(Description=forcats::as_factor(Description)) %>%
+      ggplot2::ggplot(ggplot2::aes(class, Description, fill=pvalue, size=Percentage))+
+      ggplot2::geom_point(shape=21)+
+      ggplot2::scale_fill_gradient(high = "#fdcc8a", low="#ae017e")+
+      ggplot2::theme_bw()
+
+```

@@ -1,16 +1,27 @@
-# Cdk7_paper_figure
+# Functional insight into CDK7 in fungal pathogen Cryptococcus
+neoformans
 
-### Percent similarity
+This study uncovers the role of the cyclin-dependent kinase **CDK7** in
+the fungal pathogen *Cryptococcus neoformans*. Using genetic tagging,
+phosphoproteomics, and transcriptomics, our study shows that fungal CDK7
+forms an active CAK complex regulating transcription, splicing, and
+cell-cycle progression. Human CDK7 inhibitors, especially **SY-1365
+(Mevociclib)**, **BS-181** effectively block fungal growth and act
+synergistically with existing antifungals, highlighting CDK7 as a
+promising **new antifungal target**.
+
+### CnCDK7 is more similar to humans
+
+Alignment of amino acids sequences shows that CnCDK7 is similar to human
+CDK7
 
 ![](README_files/figure-commonmark/percent_similar-1.png)
 
-### Functional insights into CnCDK7 using CDK7 inhibitors
+## RNA-seq analysis of ***C. neoformans*** under CDK7 inhibition
 
-1.  [SY-1365](https://github.com/sethiyap/CnCDK7_analysis/blob/main/Paper_SY-1365.md)
+### Data processing and QC
 
-### RNASeq data processing and QC
-
-#### Alignment statistics
+### Alignment statistics
 
 ``` r
 library(magrittr)
@@ -30,7 +41,7 @@ parcutils::get_star_align_log_summary_plot(x = star_align_log_files,
 
 ![](README_files/figure-commonmark/align_stats-1.png)
 
-#### Generate count matrix using Rsubread
+#### Generate count matrix
 
 ``` r
 source("run_rsubread.R")
@@ -46,7 +57,7 @@ cc <- run_rsubread(dir = dir, gff_file = gff_file)
 readr::write_delim(cc, file = "/Users/pooja/Documents/CDK7_project/RNASeq/RNASe1_1h_Mev_BS181/Mev_BS181_1h_read_count.txt", delim = "\t")
 ```
 
-#### DESeq for differential gene expression and normalized count matrix
+#### DESeq2-based differential expression and normalization
 
 ``` r
 library(magrittr)
@@ -117,4 +128,14 @@ parcutils::get_pca_plot(x = res, label_replicates = TRUE)
 
 ![](README_files/figure-commonmark/pca-1.png)
 
-### 
+## **Functional insights into CnCDK7 using CDK7 inhibitors**
+
+The following section highlights functional insights into the role of
+CDK7 in *Cryptococcus neoformans* (Cn) using CDK7 inhibitors as
+molecular tools. The data integrate multiple microbiology, molecular and
+multi-omics approaches to elucidate CDK7 function in this WHO-priority
+fungal pathogen, employing two human CDK7 inhibitors with demonstrated
+antifungal potential.
+
+1.  [SY-1365](https://github.com/sethiyap/CnCDK7_analysis/blob/main/Paper_SY-1365.md)
+2.  BS-181
