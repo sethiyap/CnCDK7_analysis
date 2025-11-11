@@ -149,6 +149,8 @@ Experimental setup
 
 ```{r dose_curve_17Oct24, echo=FALSE, eval=TRUE}
 
+library(magrittr)
+
 dose_curve_data <- readr::read_delim("data_files/dose_response_17Oct24.txt", delim="\t", col_names = TRUE) 
   
 dosecurve_dt <-  dose_curve_data %>% 
@@ -452,3 +454,4 @@ table(gene_intersections$sets)
 ```
 
 #### 
+

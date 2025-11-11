@@ -4,9 +4,7 @@
 
 #### 
 
-#### Enzyme assay pvalue at last time-point
-
-![](Paper_SY-1365_files/figure-commonmark/pval_last-1.png)
+#### 
 
 ## Growth Curves
 
