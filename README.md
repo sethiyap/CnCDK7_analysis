@@ -9,6 +9,11 @@ cell-cycle progression. Human CDK7 inhibitors, especially **SY-1365
 synergistically with existing antifungals, highlighting CDK7 as a
 promising **new antifungal target**.
 
+This repository complements our *mBio* publication describing
+how **SY-1365** targets and inhibits *C. neoformans* CDK7. 📖 [Read the
+paper
+on *mBio*](https://journals.asm.org/doi/10.1128/mbio.02898-25?utm_source=chatgpt.com).
+
 ### CnCDK7 is more similar to humans
 
 Alignment of amino acids sequences shows that CnCDK7 is similar to human
