@@ -1,5 +1,6 @@
 # BS-181
 
+
 ### Dose response growth curve
 
 Experimental setup
@@ -128,6 +129,46 @@ growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates =
 ```
 
 ![](Paper_BS181_files/figure-commonmark/dose_curve_Ca-1.png)
+
+#### Enzyme Assay
+
+``` r
+df <- tibble::tribble(
+  ~conc, ~DMSO, ~`400`, ~`200`, ~`100`, ~`50`, ~`10`,
+  "set1", 100,  2.26490081, 20.9239019, 37.4712085, 41.22, 80.07,
+  "set2", 100, 16.4856745, 14.5272318, 23.1562626, 53.18, 84.63,
+  "set3", 100, NA, NA, 62.4955292, NA, 91.19765,
+  "set4", 100, NA, NA, NA, NA, 85.9427336,
+  "set5", 100, NA, NA, NA, NA, 69.3998722
+)
+
+
+df_long <- df %>%
+  tidyr::pivot_longer(
+    cols = -conc,
+    names_to = "treatment",
+    values_to = "value"
+  ) %>%
+  tidyr::drop_na(value) %>% 
+  dplyr::mutate(treatment=forcats::as_factor(treatment)) %>%
+  dplyr::filter(treatment!="400")
+
+
+
+# Plot boxplot with individual points
+ggplot2::ggplot(df_long, ggplot2::aes(x = treatment, y = value, fill = treatment)) +
+          ggplot2::geom_boxplot(outlier.shape = NA, color = "black", alpha = 0.8) +
+          ggplot2::geom_jitter(width = 0.15, size = 2) +
+          ggplot2::labs( x = "Treatment (µg/mL)", y = "Relative activity (%)") +
+          ggplot2::scale_y_continuous(
+            breaks = seq(0, 120, by = 50),
+            minor_breaks = seq(0, 120, by = 10),
+            limits = c(0, 120)) +
+          ggplot2::scale_fill_manual(values = c("#000000", "#E83E8C", "#1B9E9E", "#5E3C99", "#A78BC3")) +
+          ggplot2::theme_bw()
+```
+
+![](Paper_BS181_files/figure-commonmark/enzyme_assay_last-1.png)
 
 #### For flow cytometry
 
