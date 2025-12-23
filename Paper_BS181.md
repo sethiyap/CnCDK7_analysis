@@ -42,6 +42,8 @@ current_plot <- current_plot %>%
 
 colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
 
+colr <- c("blue4", "#E41A1C", "gold","purple","green3",  "black")
+
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28, custom_colors = colr)
 ```
 
@@ -94,10 +96,11 @@ dosecurve_dt <-  dose_curve_data %>%
   dplyr::mutate(Time=as.double(Time))
               
 current_plot <- dosecurve_dt %>% 
-  dplyr::select(tidyr::matches("^H99|^Time")) %>%
+  dplyr::select(tidyr::matches("^Cgatti|^Time")) %>%
   dplyr::select(-dplyr::matches("\\((3.125|1.56)\\)"))
 
-colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
+colr <- c("blue4", "#E41A1C", "gold","purple","green3",  "black")
+
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
 ```
@@ -111,7 +114,7 @@ current_plot <- dosecurve_dt %>%
   dplyr::select(tidyr::matches("^Sc|^Time")) %>%
   dplyr::select(-dplyr::matches("\\((3.125|1.56|6.25|12.5)\\)"))
 
-colr=c( "blue4", "#E41A1C", "#FF7F00","#F781BF")
+colr=c( "blue4", "#E41A1C", "gold","black")
 
 growkar::plot_growth_curve(dat_growth_curve = current_plot, average_replicates = TRUE, end_timepoint = 28,  custom_colors = colr)
 ```

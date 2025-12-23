@@ -59,7 +59,7 @@ exclude_patts <- c("^BS181\\(1\\.56\\)", "^BS181\\(3\\.125\\)")
 current_plot <- current_plot %>%
   dplyr::select(!dplyr::matches(paste(exclude_patts, collapse = "|")))
 
-colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
+#colr=c( "blue4", "#E41A1C", "#FF7F00","purple","#A65628",  "#F781BF")
 
 colr <- c("blue4", "#E41A1C", "gold","purple","green3",  "black")
 
